@@ -1,0 +1,141 @@
+/* ======================================
+   自己的css样式
+   ====================================== */
+/*header*/
+header {
+    letter-spacing: 3px;
+    height: 532px;
+    width: 100%;
+    background: url("../img/images/dh_bg_01.png") no-repeat top center;
+}
+
+.header-slider {
+    margin: 0 auto;
+    width: 1136px;
+    height: 392px;
+}
+
+.header-slider-video {
+    height: 391px;
+    width: 680px;
+    float: left;
+    background: url("../img/images/dh_bg_vedio.png");
+}
+
+.header-slider-introduce {
+    color: #ffffff;
+    width: 411px;
+    float: right;
+    margin: 0 0 0 45px;
+}
+
+.header-slider-introduce h1 {
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.header-slider-introduce h2 {
+    font-size: 14px;
+}
+
+.header-slider-introduce p {
+    font-size: 12px;
+    position: relative;
+}
+
+.header-slider-introduce span.course-content-user {
+    background: url("../img/images/pc_course_items_02.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+}
+
+.header-slider-introduce span.course-content-good {
+    background: url("../img/images/pc_course_items_03.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+}
+
+.course-content-grade {
+    top: 0;
+    position: absolute;
+    right: 150px;
+}
+
+.course-content-grade span {
+    background: url("../img/images/pc_course_items_04.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+
+.header-button {
+    margin: 30px 0 0;
+}
+
+.header-menu {
+    height: 60px;
+    background: url("../img/images/dh_bg_02.png") repeat-x top left;
+}
+
+.header-menu ul {
+    width: 1136px;
+    line-height: 60px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    height: 60px;
+}
+
+.header-menu li {
+    text-align: center;
+    font-size: 18px;
+    width: 110px;
+    color: #34393b;
+    float: left;
+    padding: 0 25px;
+}
+
+.header-menu li.current {
+    color: #ffffff;
+    background: #028ad6;
+}
+
+.header-menu li:hover {
+    font-size: 20px;
+}
+
+/*content*/
+section {
+    width: 100%;
+}
+
+#content {
+    min-height: 500px;
+    overflow: auto;
+    width: 1136px;
+    margin: 0 auto;
+    padding: 0 0 47px;
+}
+
+/*content-partLeft*/
+.content-partLeft {
+    width: 776px;
+    float: left;
+}
+
+/*content-partRight*/
+.content-partRight {
+    width: 260px;
+    margin: 0 0 0 50px;
+    background: #ffffff;
+    float: right;
+    padding: 25px;
+}
+
+/*footer*/
+footer {
+    height: 123px;
+    background-image: none;
+}
