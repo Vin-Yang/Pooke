@@ -16,9 +16,10 @@ header {
 }
 
 .header-slider-video {
-    height: 391px;
-    width: 680px;
     float: left;
+    height: 370px;
+    margin: 10px 10px 10px 0;
+    width: 660px;
     background: url("../img/images/dh_bg_vedio.png");
 }
 
@@ -116,20 +117,23 @@ section {
     overflow: auto;
     width: 1136px;
     margin: 0 auto;
-    padding: 0 0 47px;
+    padding: 34px 0 47px;
 }
 
 /*content-partLeft*/
 .content-partLeft {
+    min-height: 500px;
+    background: #cd0a0a;
     width: 776px;
     float: left;
 }
 
 /*content-partRight*/
 .content-partRight {
+    min-height: 500px;
+    background: #0088bb;
     width: 260px;
     margin: 0 0 0 50px;
-    background: #ffffff;
     float: right;
     padding: 25px;
 }

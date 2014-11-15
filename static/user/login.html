@@ -1,10 +1,286 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的课程</title>
+    <meta name="description" content="">
+    <!--手机上的一些适配-->
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1,ser-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="apple-touch-startup-image" sizes="640x920" href="img/loading-640x920.png"
+          media="screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" sizes="768x1004" href="img/loading-768x1004.png"
+          media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+    <link rel="apple-touch-startup-image" sizes="640x1096" href="img/loading-640x1096.png"
+          media="screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)">
+    <link rel="apple-touch-icon-precomposed" sizes="114X114" href="img/iphone.png">
+    <link rel="apple-touch-icon-precomposed" href="img/android.png">
+    -->
+
+    <!--下面注释的内容是直接引用CDN（内容交付网络）上面的资源，因为那样加载速度会更快-->
+    <!--
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    -->
+    <!--<link rel="stylesheet" href="css/themes/jquery.mobile-1.4.2.css"/>
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css"/>-->
+    <link rel="stylesheet" href="../../css/normalize.css"/>
+    <link rel="stylesheet" href="../../css/base.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/user.css"/>
+    <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
+<!--[if lt IE 7]>
+<p class="browsehappy">亲，您还在使用着 <strong>过时的</strong> 浏览器. 请您
+    <a href="http://browsehappy.com/">更新</a> 一下吧以使您得到更好的体验哦！
+</p>
+<![end if]-->
 
+<header>
+    <div class="topBar">
+        <nav>
+            <div class="logo">
+                <a href="../../index.html"><img src="../../img/images/ih_logo.png" alt=""/></a>
+            </div>
+            <div class="nav">
+                <ul class="navHeader">
+                    <li><a href="../product/product.html">产品学院</a></li>
+                    <li><a href="../courseSeek/seek.html">课程众筹</a></li>
+                    <li><a href="../ask/ask.html">专业问答</a></li>
+                    <li class="current"><a href="#">我的课程</a></li>
+                </ul>
+            </div>
+            <div class="loginTop">
+                <ul>
+                    <li><a rel="nofollow" href="../user/login.html">登录</a></li>
+                    <li><a rel="nofollow" href="../user/register.html">注册</a></li>
+                </ul>
+            </div>
+            <div class="logged">
+                <ul>
+                    <li><a class="message" href="user-message.html"><img src="../../img/images/ih_message.png" alt=""/></a>
+                    </li>
+                    <li>
+                        <a class="userCenter" href="user.html"><img src="../../img/images/ih_userImage.png" alt=""/></a>
+                        <ul id="nav_list">
+                            <li><a href="../user/user.html" id="my_space">Vin_Yang</a></li>
+                            <li><a href="../user/user-note.html" id="my_note">我的笔记</a></li>
+                            <li><a href="../user/user-message.html" id="my_question">我的问答</a></li>
+                            <li><a href="../user/user-information.html" id="my_setting">我的设置</a></li>
+                            <li><a href="#" id="my_logout">退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="header-slider">
+    </div>
+</header>
+<section>
+    <div id="content">
+        <aside class="content-partLeft">
+            <div class="content-partLeft-nav">
+                <ul>
+                    <li><a href="user.html">我的课程</a></li>
+                    <li><a href="user-interview.html">我的面试</a></li>
+                    <li><a href="user-note.html">我的笔记</a></li>
+                    <li><a class="nobg active" href="user-message.html">我的消息</a></li>
+                    <li><a class="nobg" href="user-information.html">个人资料</a></li>
+                    <li><a class="nobg" href="user-security.html">安全设置</a></li>
+                </ul>
+            </div>
+        </aside>
+        <article class="content-partRight">
+            <div class="content-partRight-content">
+                <ul>
+                    <li class="active">我的帖子</li>
+                    <li>我参与的</li>
+                    <li>系统消息</li>
+                </ul>
+
+                <div class="content-partRight-message-wrap">
+                    <div class="message-header clearfix">
+                        <div class="from-user-info">
+                            <div class="avatar">
+                                <img src="../../img/images/pc_course_items_01.png">
+                            </div>
+                            <div class="name">Sunflower</div>
+                        </div>
+                        <div class="message-info">
+                            <div class="time">2014-09-08 09:00</div>
+                            <div class="label">
+                                <span>交互设计</span>
+                                <span>交互设计</span>
+                            </div>
+                            <div class="title">
+                                <span class="tips"></span>
+                                <span class="top">[置顶]</span>
+                                【有奖活动】畅谈我与慕课网 IT好书随心选
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-content">
+                        <span>[最赞回答]</span>
+                        <span class="user">
+                            <span class="avatar"><img src="../../img/images/pc_course_items_01.png"></span>
+                            <span class="name">快乐的小牛妞</span>
+                        </span>
+                        【我与慕课网】可以说我算是imooc的元老级人物了。从域名还是mukewang的时候开始i，到今天的imocc，我见证的慕课网的成长，从最开始的ui界面到现在高大上的风格，点点弟弟，就如过往的火车，一页一页涌记心头。与此同时，伴随着课程的越来越丰富，收获的只是越来越多，衷心希望慕课网越来越好！我爱imooc...
+                    </div>
+                    <div class="message-op">
+                        <div class="comment">评论(3)</div>
+                        <div class="view">浏览</div>
+                        <div class="praise">赞(14)</div>
+                        <div class="delete">删除</div>
+                        <div class="top">置顶</div>
+                    </div>
+                </div>
+                <div class="content-partRight-message-wrap">
+                    <div class="message-header clearfix">
+                        <div class="from-user-info">
+                            <div class="avatar">
+                                <img src="../../img/images/pc_course_items_01.png">
+                            </div>
+                            <div class="name">Sunflower</div>
+                        </div>
+                        <div class="message-info">
+                            <div class="time">2014-09-08 09:00</div>
+                            <div class="label">
+                                <span>交互设计</span>
+                                <span>交互设计</span>
+                            </div>
+                            <div class="title">
+                                <span class="tips"></span>
+                                <span class="top">[置顶]</span>
+                                【有奖活动】畅谈我与慕课网 IT好书随心选
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-content">
+                        <span>[最赞回答]</span>
+                        <span class="user">
+                            <span class="avatar"><img src="../../img/images/pc_course_items_01.png"></span>
+                            <span class="name">快乐的小牛妞</span>
+                        </span>
+                        【我与慕课网】可以说我算是imooc的元老级人物了。从域名还是mukewang的时候开始i，到今天的imocc，我见证的慕课网的成长，从最开始的ui界面到现在高大上的风格，点点弟弟，就如过往的火车，一页一页涌记心头。与此同时，伴随着课程的越来越丰富，收获的只是越来越多，衷心希望慕课网越来越好！我爱imooc...
+                    </div>
+                    <div class="message-op">
+                        <div class="comment">评论(3)</div>
+                        <div class="view">浏览</div>
+                        <div class="praise">赞(14)</div>
+                        <div class="delete">删除</div>
+                        <div class="top">置顶</div>
+                    </div>
+                </div>
+                <div class="content-partRight-message-wrap">
+                    <div class="message-header clearfix">
+                        <div class="from-user-info">
+                            <div class="avatar">
+                                <img src="../../img/images/pc_course_items_01.png">
+                            </div>
+                            <div class="name">Sunflower</div>
+                        </div>
+                        <div class="message-info">
+                            <div class="time">2014-09-08 09:00</div>
+                            <div class="label">
+                                <span>交互设计</span>
+                                <span>交互设计</span>
+                            </div>
+                            <div class="title">
+                                <span class="tips"></span>
+                                <span class="top">[置顶]</span>
+                                【有奖活动】畅谈我与慕课网 IT好书随心选
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-content">
+                        <span>[最赞回答]</span>
+                        <span class="user">
+                            <span class="avatar"><img src="../../img/images/pc_course_items_01.png"></span>
+                            <span class="name">快乐的小牛妞</span>
+                        </span>
+                        【我与慕课网】可以说我算是imooc的元老级人物了。从域名还是mukewang的时候开始i，到今天的imocc，我见证的慕课网的成长，从最开始的ui界面到现在高大上的风格，点点弟弟，就如过往的火车，一页一页涌记心头。与此同时，伴随着课程的越来越丰富，收获的只是越来越多，衷心希望慕课网越来越好！我爱imooc...
+                    </div>
+                    <div class="message-op">
+                        <div class="comment">评论(3)</div>
+                        <div class="view">浏览</div>
+                        <div class="praise">赞(14)</div>
+                        <div class="delete">删除</div>
+                        <div class="top">置顶</div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </div>
+</section>
+<footer>
+    <div class="bottomBar">
+        <nav>
+            <ul class="navFooter">
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">嘉宾入驻</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">友情链接</a></li>
+                <li><a href="#">QQ群:366518004</a></li>
+            </ul>
+            <p>Copyright&copy;2013-2014 ipooke.com</p>
+        </nav>
+    </div>
+</footer>
+<!--下面注释的内容是直接引用CDN（内容交付网络）上面的资源，因为那样加载速度会更快-->
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+-->
+
+<!--下面的内容是加载页面要用的js文件-->
+<script src="../../js/vendor/jquery-1.11.1.min.js"></script>
+<!--<script src="js/vendor/jquery.mobile-1.4.2.min.js"></script>-->
+<script src="../../js/vendor/jquery.cookie.js"></script>
+<script src="../../js/plugins.js"></script>
+<!--下面两个js文件是完成ajax的一个插件-->
+<!--
+<script src="js/mine/base.js"></script>
+<script src="js/mine/score.js"></script>
+-->
+<script src="../../js/index.js"></script>
+<script src="../../js/mine/user.js"></script>
+
+
+<!-- 下面的注释是引用谷歌的站点统计分析工具的js代码-->
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>-->
 </body>
 </html>

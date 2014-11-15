@@ -49,6 +49,7 @@ section {
 }
 
 .course {
+    position: relative;
     border: 1px solid #a2a0a0;
     border-radius: 5px 5px 0 0;
     box-shadow: 0 3px 6px 0.75px #a2a0a0;
@@ -56,6 +57,23 @@ section {
     margin: 0 30px 50px;
     padding: 0 25px;
     width: 263px;
+}
+
+.course a.employ {
+    line-height: 28px;
+    margin: 5px;
+    text-align: center;
+    width: 120px;
+    position: absolute;
+    top: 260px;
+    right: 20px;
+    color: #81cff3;
+    border: 1px solid #81cff3;
+}
+
+.course a.employ:hover {
+    color: #ffffff;
+    background: #34b4ef;
 }
 
 .course-header {
@@ -165,7 +183,6 @@ section {
 }
 
 .course-footer-button {
-    float: left;
     margin: 5px;
     width: 120px;
     line-height: 30px;
@@ -181,9 +198,11 @@ section {
     text-decoration: none;
     display: block;
 }
-.course-footer-button a:hover{
+
+.course-footer-button a:hover {
     background: #00a0e9;
 }
+
 /*footer*/
 footer {
     height: 123px;

@@ -15,7 +15,9 @@ select,
 textarea {
     color: #222;
 }
-
+a{
+    text-decoration: none;
+}
 html {
     font-size: 1em;
     line-height: 1.4;
@@ -159,13 +161,7 @@ nav {
 
 header .loginTop {
     display: none;
-    list-style: none outside none;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 10px;
+    float: right;
 }
 
 header .loginTop li {
@@ -186,13 +182,7 @@ header .loginTop a:hover {
 }
 
 header .logged {
-    list-style: none outside none;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+    float: right;
 }
 
 header .logged ul {
@@ -230,6 +220,66 @@ header .userCenter {
     height: 80px;
 }
 
+header .logged li ul {
+    text-decoration: none;
+    background: none repeat scroll 0 0 #292929;
+    display: none;
+    list-style: outside none none;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 140px;
+    height: auto;
+    z-index: 999;
+}
+
+header .logged li:hover ul {
+    display: block;
+}
+#nav_list li a {
+    background-image: url("../img/images/ih_menu_icon.png");
+    background-repeat: no-repeat;
+    border-top: 1px solid #4a5153;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 0 0 47px;
+    text-align: left;
+    text-decoration: none;
+    width: 93px;
+}
+#nav_list li a:hover {
+    background-color: #363d40;
+    color: #fff;
+}
+#nav_list #my_space {
+    background-image: none;
+    border: 0 none;
+    padding: 0 18px;
+    text-align: center;
+}
+#nav_list #my_space:hover {
+    background: #292929;
+    text-decoration: underline;
+}
+#nav_list .my_message {
+    background-position: 19px -46px;
+}
+#nav_list #my_note {
+    background-position: 19px -90px;
+}
+#nav_list #my_question {
+    background-position: 19px -128px;
+}
+#nav_list #my_setting {
+    background-position: 19px -167px;
+}
+#nav_list #my_logout {
+    background-position: 19px -207px;
+}
+/*button*/
 .header-button {
     width: 213px;
     margin: 294px auto 0;

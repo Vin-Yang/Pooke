@@ -14,7 +14,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>我的课程</title>
+    <title>课程详情</title>
     <meta name="description" content="">
     <!--手机上的一些适配-->
     <!--
@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="../../css/normalize.css"/>
     <link rel="stylesheet" href="../../css/base.css"/>
     <link rel="stylesheet" href="../../css/common.css"/>
-    <link rel="stylesheet" href="../../css/ask.css"/>
+    <link rel="stylesheet" href="../../css/course-details.css"/>
     <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -59,9 +59,9 @@
             <div class="nav">
                 <ul class="navHeader">
                     <li><a href="../product/product.html">产品学院</a></li>
-                    <li><a href="../course/course.html">课程众筹</a></li>
+                    <li class="current"><a href="#">课程众筹</a></li>
                     <li><a href="../ask/ask.html">专业问答</a></li>
-                    <li class="current"><a href="#">我的课程</a></li>
+                    <li><a href="../user/user.html">我的课程</a></li>
                 </ul>
             </div>
             <div class="loginTop">
@@ -72,51 +72,77 @@
             </div>
             <div class="logged">
                 <ul>
-                    <li><a class="message" href="../user/message.html"><img src="../../img/images/ih_message.png" alt=""/></a></li>
-                    <li><a class="userCenter" href="../user/user.html"><img src="../../img/images/ih_userImage.png" alt=""/></a></li>
+                    <li><a class="message" href="../user/user-message.html"><img src="../../img/images/ih_message.png" alt=""/></a></li>
+                    <li>
+                        <a class="userCenter" href="../user/user.html"><img src="../../img/images/ih_userImage.png" alt=""/></a>
+                        <ul id="nav_list">
+                            <li><a href="../user/user.html" id="my_space">Vin_Yang</a></li>
+                            <li><a href="../user/user-note.html" id="my_note">我的笔记</a></li>
+                            <li><a href="../user/user-message.html" id="my_question">我的问答</a></li>
+                            <li><a href="../user/user-information.html" id="my_setting">我的设置</a></li>
+                            <li><a href="#" id="my_logout">退出</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
     </div>
     <div class="header-slider">
+        <div class="header-slider-video">
+
+        </div>
+        <div class="header-slider-introduce">
+            <h1>产品经理面霸之路</h1>
+
+            <p>
+                <span class="course-content-user"></span><span class="course-content-userNumber">（425）</span>
+                <span class="course-content-good"></span><span class="course-content-goodNumber">（300）</span>
+                <span class="course-content-grade">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </p>
+
+            <h2>讲师介绍:</h2>
+            <p>
+                万军，乐豆产品经理
+            </p>
+            <h2>适合对象:</h2>
+            <p>1.具有大学英语四级基础或相当水平英语学习者；</p>
+            <p>2.公司国际业务或涉及机关从业者；</p>
+            <div class="header-button">
+
+                <a href="../pay/pay.html">立即购买</a>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu">
+        <ul>
+            <li id="menu-detail" class="current">课程详情</li>
+            <li id="menu-catalog">课程目录</li>
+            <li id="menu-discuss">讨论区</li>
+            <li id="menu-evaluate">课程评价</li>
+        </ul>
     </div>
 </header>
 <section>
     <div id="content">
-        <article class="content-partOne">
-            <div class="content-partOne-courseList">
-                <div class="course">
-                    <div class="course-header">
-                        <h1>Android中的图片特效处理之黑白之黑白之黑白</h1>
-                        <span>Android</span>
-                        <p>三东方闪SD敢达是归属地感受到三帝国时代归属感三等到三帝国时代归属感三等到三帝国时代归属感三等功三个搜狗山东高速地感受到郭德纲是的</p>
-                    </div>
-                    <hr>
-                    <div class="course-content">
-                        <div class="course-content-count">
-                                <span class="supportNumber">1700</span><br>
-                                <span class="support">已支持人数</span>
-                        </div>
-                        <div class="course-content-count bl">
-                            <span class="supportNumber">1800</span><br>
-                            <span class="support">目标人数</span>
-                        </div>
-                        <div class="course-content-count bl">
-                            <span class="supportNumber">18</span><br>
-                            <span class="support">剩余天数</span>
-                        </div>
-                    </div>
-                    <div class="course-footer">
-                        <div class="course-footer-button blue">
-                            <a href="" class="white">支持开课</a>
-                        </div>
-                        <div class="course-footer-button">
-                            <a href="">应聘讲师</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <article class="content-partLeft">
+            <h1>课程介绍</h1>
+            <hr>
+            <p>
+                数据流数据流数据流数据流数据流数据流数据流数据流数据流数据流数据流数据流数据流数据流数据流数据流
+            </p>
+            <h1>特色服务</h1>
+            <hr>
+            <p>
+
+            </p>
         </article>
+        <aside class="content-partRight"></aside>
     </div>
 </section>
 <footer>
