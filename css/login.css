@@ -1,0 +1,55 @@
+body {
+    background: #030303 url("../img/images/lb_bg_01.png") no-repeat top center;
+}
+
+/*content*/
+#content {
+    width: 1136px;
+    margin: 0 auto;
+}
+
+.content-top {
+    height: 200px;
+    padding: 130px 0 0;
+}
+
+.logoLarge {
+    text-align: center;
+}
+
+.content-center {
+    padding: 0 168px;
+}
+
+.content-center-left {
+    float: left;
+    width: 360px;
+    padding: 30px 20px;
+}
+
+.rlf-group {
+
+}
+
+.rlf-input {
+    padding: 0 0 0 50px;
+    color: #ffffff;
+    background: url("../img/images/lc_login_input_items.png") no-repeat scroll 0 0;;
+    width: 308px;
+    height: 43px;
+}
+
+.rlf-input-email {
+    border-bottom: none;
+    background-position: 0 0;
+}
+
+.rlf-input-pwd {
+    background-position: 0 -50px;
+}
+
+.content-center-right {
+    float: right;
+    width: 360px;
+    padding: 30px 20px;
+}
