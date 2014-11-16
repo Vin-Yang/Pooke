@@ -14,7 +14,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>我的课程</title>
+    <title>用户登录</title>
     <meta name="description" content="">
     <!--手机上的一些适配-->
     <!--
@@ -56,7 +56,8 @@
                 <a href="../../index.html"><img src="../../img/images/lc_logo_01.png" alt=""/></a>
             </div>
         </article>
-        <article class="content-center">
+        <!--注册部分-->
+        <article class="content-center" style="display: none">
             <div class="content-center-left">
                 <form id="signup-form">
                     <div class="rlf-group">
@@ -71,9 +72,48 @@
                         <input type="button" class="rlf-btn-green btn-full r" hidefocus="true" value="登录"
                                id="signin-btn">
                     </div>
+                    <p class="select">已有账号？直接<a href="login.html">登录</a></p>
                 </form>
             </div>
-            <div class="content-center-right"></div>
+            <div class="content-center-right">
+                <p class="choice">无需注册，直接<a href="login.html">登录</a></p>
+                <h4>--------------- 其他账号登录 ---------------</h4>
+
+                <p><a href="login.html"><img src="../../img/images/lc_sina_login_bg_01.png"></a></p>
+
+                <p><a href="login.html"><img src="../../img/images/lc_qq_login_bg_01.png"></a></p>
+            </div>
+        </article>
+        <!--登录部分-->
+        <article class="content-center">
+            <div class="content-center-left">
+                <form id="signup-form">
+                    <div class="rlf-group">
+                        <input type="text" placeholder="请输入注册邮箱" class="rlf-input rlf-input-email" autocomplete="off"
+                               data-validate="email" name="email">
+                    </div>
+                    <div class="rlf-group">
+                        <input type="password" placeholder="请输入密码" class="rlf-input rlf-input-pwd" autocomplete="off"
+                               name="password">
+                    </div>
+                    <div class="rlf-group">
+                        <p class="forget"><input type="checkbox" class="rlf-btn-green btn-full r" hidefocus="true" value="登录">下次自动登录 <a href="forget.html">忘记密码？</a></p>
+
+                    </div>
+                    <div class="rlf-group">
+                        <input type="button" class="rlf-btn-green btn-full r" hidefocus="true" value="登录"
+                               id="signin-btn">
+                    </div>
+                </form>
+            </div>
+            <div class="content-center-right">
+                <p class="choice">尚无账号？立即<a href="login.html">注册</a></p>
+                <h4>--------------- 其他账号登录 ---------------</h4>
+
+                <p><a href="login.html"><img src="../../img/images/lc_sina_login_bg_01.png"></a></p>
+
+                <p><a href="login.html"><img src="../../img/images/lc_qq_login_bg_01.png"></a></p>
+            </div>
         </article>
     </div>
 </section>

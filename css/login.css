@@ -2,7 +2,7 @@ body {
     background: #030303 url("../img/images/lb_bg_01.png") no-repeat top center;
 }
 
-/*content*/
+/*content-register*/
 #content {
     width: 1136px;
     margin: 0 auto;
@@ -19,16 +19,20 @@ body {
 
 .content-center {
     padding: 0 168px;
+    color: #ffffff;
 }
 
 .content-center-left {
     float: left;
     width: 360px;
-    padding: 30px 20px;
+    padding: 10px 20px;
 }
-
-.rlf-group {
-
+input{
+    border: 1px solid #ffffff;
+}
+input:focus {
+    border: 1px solid #ff0000;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.075) inset, 0 0 6px #ff0000;
 }
 
 .rlf-input {
@@ -48,8 +52,47 @@ body {
     background-position: 0 -50px;
 }
 
-.content-center-right {
-    float: right;
+#signin-btn {
+    color: #ffffff;;
+    margin: 15px 0 0;
     width: 360px;
-    padding: 30px 20px;
+    height: 43px;
+    background: #00B7EE;
+    border: none;
+    border-radius: 5px;
+}
+#signin-btn:hover{
+    background: #0088bb;
+}
+p.select {
+    color: #00B7EE;
+    text-align: right;
+}
+
+p a {
+    padding: 0 0 0 5px;
+    color: #00B7EE;
+    text-decoration: underline;
+}
+
+p.choice {
+    text-align: left;
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.content-center-right {
+    text-align: center;
+    float: right;
+    width: 359px;
+    padding: 10px 20px 0;
+    border-left: 1px solid #ffffff;
+}
+
+/*content-login*/
+.forget{
+    margin: 15px 0 10px;
+    font-size: 14px;
+    color: #b2b2b2;
 }
