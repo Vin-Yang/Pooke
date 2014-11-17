@@ -160,14 +160,17 @@ nav {
 }
 
 header .loginTop {
-    display: none;
     float: right;
+    height: 80px;
+    line-height: 80px;
 }
-
+header .loginTop ul{
+    margin: 0;
+    padding: 0;
+}
 header .loginTop li {
     float: left;
     height: 22px;
-    padding: 4px 0;
 }
 
 header .loginTop a {
@@ -182,6 +185,7 @@ header .loginTop a:hover {
 }
 
 header .logged {
+    display: none;
     float: right;
 }
 

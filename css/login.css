@@ -1,5 +1,6 @@
 body {
     background: #030303 url("../img/images/lb_bg_01.png") no-repeat top center;
+    background-size: cover;
 }
 
 /*content-register*/
@@ -10,7 +11,7 @@ body {
 
 .content-top {
     height: 200px;
-    padding: 130px 0 0;
+    padding: 100px 0 0;
 }
 
 .logoLarge {
@@ -31,8 +32,8 @@ input{
     border: 1px solid #ffffff;
 }
 input:focus {
-    border: 1px solid #ff0000;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.075) inset, 0 0 6px #ff0000;
+    border: 1px solid #00B7EE;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.075) inset, 0 0 6px #00B7EE;
 }
 
 .rlf-input {
@@ -57,12 +58,12 @@ input:focus {
     margin: 15px 0 0;
     width: 360px;
     height: 43px;
-    background: #00B7EE;
+    background: #0088bb;
     border: none;
     border-radius: 5px;
 }
 #signin-btn:hover{
-    background: #0088bb;
+    background: #00B7EE;
 }
 p.select {
     color: #00B7EE;
