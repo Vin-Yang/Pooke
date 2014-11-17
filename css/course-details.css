@@ -108,7 +108,9 @@ header {
 }
 
 /*content*/
+/*contentDetails*/
 section {
+    background: #fafafa;
     width: 100%;
 }
 
@@ -120,24 +122,164 @@ section {
     padding: 34px 0 47px;
 }
 
+#content p {
+    color: #808080;
+    font-size: 14px;
+    padding: 10px 0 15px;
+}
+
+#content h1 {
+    font-size: 18px;
+    color: #302e2e;
+}
+
+#content h2 {
+    color: #808080;
+    font-size: 16px;
+}
+
 /*content-partLeft*/
 .content-partLeft {
+    padding: 25px;
+    background: #ffffff;
     min-height: 500px;
-    background: #cd0a0a;
-    width: 776px;
+    width: 726px;
     float: left;
 }
 
 /*content-partRight*/
 .content-partRight {
-    min-height: 500px;
-    background: #0088bb;
+    background: #ffffff;
     width: 260px;
     margin: 0 0 0 50px;
     float: right;
     padding: 25px;
 }
 
+.teacherIntro {
+    padding: 30px 0 0;
+}
+
+.teacherIntro-header {
+    height: 120px;
+}
+
+.teacherIntro-header-picture {
+    border-radius: 56px;
+    width: 112px;
+    height: 112px;
+    float: left;
+}
+
+.teacherIntro-header-info {
+    padding: 15px 25px 0 0;
+    float: right;
+}
+/*courseList*/
+.content-partTwo-courseList {
+    height: auto;
+    width: 260px;
+    margin: 0 auto;
+}
+
+.course {
+    float: left;
+    border-radius: 5px 5px 0 0;
+    width: 258px;
+    border: 1px solid #a2a0a0;
+    box-shadow: 0px 3px 6px 0.75px #a2a0a0;
+    margin: 5px 0 10px;
+}
+
+.course h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: #4c4c4c;
+}
+
+.course-header {
+    height: 145px;
+
+}
+
+.course-content {
+    height: 60px;
+    padding: 10px;
+
+}
+
+.course-content p {
+    position: relative;
+    font-size: 12px;
+    color: #808080;
+    margin: 0;
+    padding: 18px 0;
+}
+
+.course-content p span {
+    color: #028ad6;;
+}
+
+.course-content-button {
+    position: absolute;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url("../img/images/ic_course-content-button_bg.png") no-repeat 0 0;
+    right: 3px;
+    bottom: 10px;
+}
+
+.content-partThree {
+    height: 358px;
+    background: url("../img/images/ic_partThree_bg.png") no-repeat 0 0;
+}
+
+.content-partThree-planList {
+    margin: 0 auto;
+    width: 1130px;
+    height: 338px;
+    border-right: 1px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.plan {
+    color: #808080;
+    border-left: 1px solid #dcdcdc;
+    width: 281px;
+    height: 338px;
+    float: left;
+}
+
+.plan:hover {
+    background-color: #34b4ef;
+    color: #ffffff;
+}
+
+.plan-header {
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+}
+
+.plan-content {
+
+}
+
+.plan-content h2 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.plan-content p {
+    margin: 0;
+    padding: 0 30px;
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 25px;
+}
 /*footer*/
 footer {
     height: 123px;
