@@ -52,7 +52,10 @@ input:focus {
 .rlf-input-pwd {
     background-position: 0 -50px;
 }
-
+.ref-input-rePwd{
+    background-position: 0 -50px;
+    border-top:none ;
+}
 #signin-btn {
     color: #ffffff;;
     margin: 15px 0 0;
