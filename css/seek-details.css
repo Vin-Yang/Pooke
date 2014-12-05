@@ -67,19 +67,22 @@ section {
     color: #808080;
     font-size: 14px;
 }
-.share{
+
+.share {
     background: url("../img/images/sdc_content_share.png") no-repeat center center;
     display: inline-block;
     height: 59px;
     width: 39px;
 }
-.submit{
+
+.submit {
     clear: both;
     height: 100px;
     padding: 80px 0 0;
     text-align: center;
 }
-.submit .employ{
+
+.submit .employ {
     font-size: 18px;
     border: 1px solid #81cff3;
     color: #81cff3;
@@ -90,12 +93,75 @@ section {
     text-align: center;
     width: 230px;
 }
+
 .submit .employ:hover {
     background: none repeat scroll 0 0 #34b4ef;
     color: #ffffff;
 }
 
+.discuss {
+    padding: 50px 128px;
+}
 
+.discuss-hd, .discuss-ctList-item {
+    padding: 0 0 0 70px;
+    position: relative;
+}
+
+.hd-left, .item-left {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 60px;
+}
+
+.hd-right textarea {
+    border: 1px solid #c7ced1;
+    display: block;
+    height: 70px;
+    padding: 10px;
+    resize: none;
+    width: 687px;
+}
+
+.hd-right textarea:focus {
+    border-color: #34b4ef;
+}
+
+.hd-right span {
+    display: inline-block;
+    margin: 20px 0 30px;
+    color: #808080;
+    font-size: 14px;
+}
+
+.hd-right-submit {
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    width: 100px;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    background: #34b4ef;
+    border: none;
+    color: #ffffff;
+    margin: 20px 0 0;
+}
+
+.hd-right-submit:hover {
+    font-size: 15px;
+}
+
+.discuss-ctList-item{
+    border-top:1px solid #dcdcdc ;
+}
+.item-right span{
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 5px;
+}
 /*footer*/
 footer {
     height: 123px;

@@ -1,0 +1,172 @@
+/* ======================================
+   自己的css样式
+   ====================================== */
+body {
+    background: #fafafa;
+}
+
+/*header*/
+header {
+    height: 80px;
+    width: 100%;
+}
+
+/*content*/
+section {
+    margin: 50px 0;
+    width: 100%;
+}
+
+#content {
+    background: #ffffff;
+    overflow: auto;
+    width: 1136px;
+    margin: 0 auto;
+    padding: 0 0 50px;
+}
+
+/*partOne*/
+.content-partOne {
+    padding: 60px 50px 20px;
+}
+
+#content h1 {
+    padding: 15px 20px;
+    margin: 0;
+    color: #ffffff;
+    background: #00a0e9;
+    font-size: 18px;
+}
+
+.content-partOne h2 {
+    color: #808080;
+    font-size: 20px;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px 0;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+}
+
+.course {
+    height: 290px;
+    border: 3px solid #eeeeee;
+    float: left;
+    margin: 0 10px 50px;
+    padding: 0 25px;
+    position: relative;
+    width: 182px;
+}
+
+.course:hover {
+    border-color: #81cff3;
+    box-shadow: none;
+}
+
+.course .course-footer img {
+    display: none;
+}
+
+.course:hover .course-footer img {
+    display: block;
+}
+
+.course-header {
+    position: relative;
+    text-align: center;
+}
+
+.course-header span {
+    color: #808080;
+    display: inline-block;
+    font-size: 14px;
+    margin: 20px 0 0;
+}
+
+.course-header p {
+    color: #808080;
+    font-size: 14px;
+    height: 80px;
+    margin: 0;
+    overflow: hidden;
+    padding: 10px 0 0;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+
+.course-content {
+    margin: 15px 0 0;
+    text-align: center;
+}
+
+.course-footer {
+    height: 75px;
+    position: relative;
+}
+
+.course-footer p {
+    text-align: center;
+    font-size: 12px;
+    color: #808080;
+}
+
+.course-footer img {
+    position: absolute;
+    right: -25px;
+    bottom: 0;
+}
+
+.pay {
+    clear: both;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 20px;
+    text-align: right;
+}
+
+.pay p {
+    color: #808080;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.pay span {
+    color: #34b4ef;
+    font-size: 28px;
+}
+
+.pay-right-submit {
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    background: #34b4ef;
+    border: none;
+    color: #ffffff;
+    margin: 0 0 0 20px;
+}
+
+/*partTwo*/
+.content-partTwo {
+    padding: 60px 100px 20px;
+    color: #808080;
+}
+.content-partTwo h2{
+    font-size: 18px;
+    color: #302e2e;
+ }
+.content-partTwo p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.content-partTwo .brief{
+    margin: 50px 0;
+}
+/*footer*/
+footer {
+    height: 123px;
+    background-image: none;
+}
