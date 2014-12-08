@@ -1,0 +1,209 @@
+/* ======================================
+   自己的css样式
+   ====================================== */
+body {
+    background: #fafafa;
+}
+
+/*header*/
+header {
+    height: 80px;
+    width: 100%;
+}
+
+/*content*/
+section {
+    margin: 50px 0;
+    width: 100%;
+}
+
+#content {
+    background: #ffffff;
+    overflow: auto;
+    width: 1136px;
+    margin: 0 auto;
+    padding: 0 0 50px;
+}
+
+.content-partOne {
+    padding: 60px 50px 20px;
+}
+
+#content h1 {
+    padding: 15px 20px;
+    margin: 0;
+    color: #ffffff;
+    background: #00a0e9;
+    font-size: 18px;
+}
+
+.content-partOne h2 {
+    color: #808080;
+    font-size: 16px;
+    margin: 0;
+    overflow: hidden;
+    padding: 18px 0;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+}
+
+.course {
+    border: 1px solid #a2a0a0;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 3px 6px 0.75px #a2a0a0;
+    margin: 0 30px 50px;
+    padding: 0 25px;
+    position: relative;
+    width: 263px;
+}
+
+.course a.employ {
+    border: 1px solid #81cff3;
+    color: #81cff3;
+    line-height: 28px;
+    margin: 5px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 260px;
+    width: 120px;
+}
+
+.course:hover {
+    box-shadow: 0 3px 6px 0.75px #a2a0a0;
+}
+
+.course-header {
+    height: 173px;
+    position: relative;
+    text-align: center;
+}
+
+.course-header span {
+    color: #808080;
+    font-size: 14px;
+}
+
+.course-header p {
+    color: #808080;
+    font-size: 14px;
+    height: 80px;
+    margin: 0;
+    overflow: hidden;
+    padding: 10px 0 0;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+
+.course-content {
+    height: 60px;
+}
+
+.course-content-count {
+    color: #808080;
+    float: left;
+    height: 48px;
+    text-align: center;
+    width: 86px;
+}
+
+.course-content-count span.supportNumber {
+    color: #028ad6;
+    font-size: 18px;
+}
+
+.course-content-count span.support {
+    font-size: 14px;
+}
+
+.course-content p {
+    color: #808080;
+    font-size: 10px;
+    margin: 0;
+    padding: 10px 0 0;
+    position: relative;
+}
+
+.course-content span.course-content-user {
+    background: url("../img/images/pc_course_items_02.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+}
+
+.course-content span.course-content-userNumber {
+    color: #028ad6;
+}
+
+.course-content span.course-content-good {
+    background: url("../img/images/pc_course_items_03.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+}
+
+.course-content span.course-content-goodNumber {
+    color: #028ad6;
+}
+
+.course-content-grade {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+
+.course-content-grade span {
+    background: url("../img/images/pc_course_items_04.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+
+.course-footer {
+    height: 60px;
+    position: relative;
+}
+
+.course-footer img {
+    position: absolute;
+    right: -25px;
+    bottom: 0;
+}
+
+.pay {
+    padding: 0 0 0 30px;
+    height: 80px;
+    line-height: 80px;
+    text-align: left;
+}
+
+.pay p {
+    color: #808080;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.pay span {
+    color: #34b4ef;
+    font-size: 28px;
+}
+
+.pay-right-submit {
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    background: #34b4ef;
+    border: none;
+    color: #ffffff;
+    margin: 0 0 0 20px;
+}
+
+/*footer*/
+footer {
+    height: 123px;
+    background-image: none;
+}

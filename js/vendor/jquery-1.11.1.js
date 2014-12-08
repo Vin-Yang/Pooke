@@ -1746,7 +1746,7 @@ Expr = Sizzle.selectors = {
 
 						// xml :nth-child(...) or :nth-last-child(...) or :nth(-last)?-of-type(...)
 						} else {
-							// Use the same loop as above to seek `elem` from the start
+							// Use the same loop as above to courseSeek `elem` from the start
 							while ( (node = ++nodeIndex && node && node[ dir ] ||
 								(diff = nodeIndex = 0) || start.pop()) ) {
 
@@ -8770,7 +8770,7 @@ function ajaxConvert( s, response, jqXHR, isSuccess ) {
 				// Seek a direct converter
 				conv = converters[ prev + " " + current ] || converters[ "* " + current ];
 
-				// If none found, seek a pair
+				// If none found, courseSeek a pair
 				if ( !conv ) {
 					for ( conv2 in converters ) {
 

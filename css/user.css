@@ -60,17 +60,21 @@ section {
     border-bottom: 1px solid #dcdcdc;
     text-decoration: none;
 }
+
 .content-partLeft-nav ul li a.nobg {
     background: none;
 }
+
 .content-partLeft-nav ul li a:hover,
 .content-partLeft-nav ul li .active {
     background: url("../img/images/ac_content-partLeft_items_01_hover.png") no-repeat left center;
     color: #34b4ef;
 }
+
 .content-partLeft-nav ul li a.nobg:hover {
     background: none;
 }
+
 .content-partLeft-function {
     margin: 20px 0;
 }
@@ -166,32 +170,43 @@ section {
 }
 
 /*右侧导航*/
+.content-partRight-content h1 {
+    color: #808080;
+    font-size: 14px;
+    padding: 0 0 10px;
+    margin: 0;
+    border-bottom: 1px solid #cccccc;
+}
+
 .content-partRight-content ul {
+    color: #808080;
+    font-size: 14px;
     cursor: pointer;
     list-style: none;
     padding: 0 0 0 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
     border-bottom: 1px solid #cccccc;
 }
+
 .content-partRight-content ul:after {
     clear: both;
-    height: 0px;
+    height: 0;
     display: block;
     content: '.';
     visibility: hidden;
 }
-.content-partRight-content ul>li {
+
+.content-partRight-content ul > li {
     height: 100%;
     float: left;
     padding: 2px 10px 2px 10px;
     margin-right: 20px;
-    font-size: 16px;
     line-height: 30px;
-    color: #808080;
     border-bottom: 3px solid #ffffff;
 }
-.content-partRight-content ul>li:hover,
-.content-partRight-content ul>li.active {
+
+.content-partRight-content ul > li:hover,
+.content-partRight-content ul > li.active {
     border-bottom: 3px solid #028ad6;
 }
 
@@ -200,6 +215,7 @@ section {
     border-bottom: 1px solid #d6d6d6;
     margin-top: 20px;
 }
+
 .content-partRight-course:after {
     clear: both;
     display: block;
@@ -223,13 +239,14 @@ section {
     margin-left: 25px;
     float: left;
 }
+
 .content-partRight-course-info div {
     margin-bottom: 5px;
 }
 
 .content-partRight-course-progressbar {
-    width:300px;
-    height:5px;
+    width: 300px;
+    height: 5px;
     background-color: #d6d6d6;
 }
 
@@ -251,7 +268,7 @@ section {
     -webkit-border-top-left-radius: 3px;
     -moz-border-radius-bottomleft: 3px;
     -moz-border-radius-topleft: 3px;
-    padding:0 10px 0 10px;
+    padding: 0 10px 0 10px;
     color: #ffffff !important;
     background-color: #fa819e;
 }
@@ -262,13 +279,14 @@ section {
     -moz-border-radius-bottomright: 3px;
     -moz-border-radius-topright: 3px;
     padding-right: 0px !important;
-    padding:0 10px 0 10px;
+    padding: 0 10px 0 10px;
     color: #ffffff !important;
     background-color: #fa819e;
 }
+
 .content-partRight-course-praise img {
     position: relative;
-    top:-2px;
+    top: -2px;
     height: 20px;
     width: auto;
 }
@@ -278,7 +296,7 @@ section {
     -webkit-border-top-left-radius: 3px;
     -moz-border-radius-bottomleft: 3px;
     -moz-border-radius-topleft: 3px;
-    padding:0 10px 0 10px;
+    padding: 0 10px 0 10px;
     color: #ffffff !important;
     background-color: #3fbcef;
 }
@@ -289,13 +307,14 @@ section {
     -moz-border-radius-bottomright: 3px;
     -moz-border-radius-topright: 3px;
     padding-right: 0px !important;
-    padding:0 10px 0 10px;
+    padding: 0 10px 0 10px;
     color: #ffffff !important;
     background-color: #3fbcef;
 }
+
 .content-partRight-course-comment img {
     position: relative;
-    top:-2px;
+    top: -2px;
     height: 20px;
     width: auto;
 }
@@ -307,13 +326,12 @@ section {
 
 .content-partRight-course-continue {
     display: inline-block;
-    position:relative;
+    position: relative;
     left: 150px;
     background-color: #34b4ef;
     padding: 5px 10px 5px 10px;
 
 }
-
 
 /*以下是面试页面样式*/
 .content-partRight-content-wrap {
@@ -365,12 +383,11 @@ section {
 .content-partRight-note-header .note-label {
     display: inline-block;
     padding: 2px 8px 2px 8px;
-    margin:0 10px 10px 0;
+    margin: 0 10px 10px 0;
     border-radius: 2px;
     color: #ffffff;
     background-color: #d6d6d6;
 }
-
 
 .content-partRight-note-header .note-label.active {
     background-color: #3fbcef !important;
@@ -378,7 +395,7 @@ section {
 
 .content-partRight-note-wrap {
     position: relative;
-    margin:0 0 5px 20px;
+    margin: 0 0 5px 20px;
     padding: 0px 0 10px 25px;
     border-left: 2px solid #aaaaaa;
 }
@@ -410,6 +427,7 @@ section {
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
+
 .content-partRight-message-wrap .message-header {
 
 }
@@ -427,16 +445,20 @@ section {
     border-radius: 100%;
     overflow: hidden;
 }
+
 .content-partRight-message-wrap .from-user-info {
     float: left;
 }
+
 .content-partRight-message-wrap .from-user-info .avatar img {
     width: 100%;
     height: 100%;
 }
+
 .content-partRight-message-wrap .message-info {
     float: left;
 }
+
 .content-partRight-message-wrap .message-info .time {
     display: inline-block;
 }
@@ -444,6 +466,7 @@ section {
 .content-partRight-message-wrap .message-info .label {
     display: inline-block;
 }
+
 .content-partRight-message-wrap .message-info .label span {
     color: #ffffff;
     border-radius: 3px;
@@ -452,6 +475,7 @@ section {
     background-color: #3fbcef;
     font-size: 16px;
 }
+
 .content-partRight-message-wrap .message-info .title {
     position: relative;
     margin-top: 10px;
@@ -459,10 +483,12 @@ section {
     font-size: 16px;
     font-weight: bold;
 }
+
 .content-partRight-message-wrap .message-info .top {
     color: #ff7e00;
     font-weight: normal;
 }
+
 .content-partRight-message-wrap .message-info .tips {
     width: 20px;
     height: 20px;
@@ -472,6 +498,7 @@ section {
     display: inline-block;
     background: url('../img/images/ic_course_message-tips.png') center;
 }
+
 .content-partRight-message-wrap .message-content {
     color: #99a2a7;
     margin-left: 150px;
@@ -480,10 +507,12 @@ section {
 .content-partRight-message-wrap .message-content .user {
 
 }
+
 .content-partRight-message-wrap .message-content .user .avatar img {
     width: 17px;
     height: 17px;
 }
+
 .content-partRight-message-wrap .message-content .user .name {
     color: #333333;
 }
@@ -491,6 +520,7 @@ section {
 .content-partRight-message-wrap .message-op {
     margin: 20px 0 0 160px;
 }
+
 .content-partRight-message-wrap .message-op div {
     height: 15px;
     font-size: 15px;
@@ -503,28 +533,33 @@ section {
 .content-partRight-message-wrap .message-op .comment {
     background: url('../img/images/ic_course_message_comment.png') no-repeat;
 }
+
 .content-partRight-message-wrap .message-op .view {
     background: url('../img/images/ic_course_message_view.png') no-repeat;
 }
+
 .content-partRight-message-wrap .message-op .praise {
     background: url('../img/images/ic_course_message_praise.png') no-repeat;
 }
+
 .content-partRight-message-wrap .message-op .delete {
     background: url('../img/images/ic_course_message_delete.png') no-repeat;
 }
+
 .content-partRight-message-wrap .message-op .top {
     background: url('../img/images/ic_course_message_top.png') no-repeat;
 }
+
 /*以下是安全设置页面的样式*/
 .content-partRight-content-form {
     position: relative;
-    margin: 20px 0 0 0 ;
+    margin: 20px 0 0 0;
     padding: 0 5px 0 5px;
     border: 1px solid #d6d6d6;
 }
 
 .content-partRight-form-control {
-    margin: 10px 0 20px 0 ;
+    margin: 10px 0 20px 0;
 }
 
 .content-partRight-form-control label {
@@ -536,7 +571,7 @@ section {
 }
 
 .content-partRight-form-control input {
-    height:18px;
+    height: 18px;
     width: 240px;
     padding: 4px 5px 4px 5px;
     color: #828282;
@@ -555,7 +590,6 @@ section {
     color: #555555;
     text-align: left;
 }
-
 
 .content-partRight-form-strength {
     display: inline;
@@ -584,7 +618,7 @@ section {
 
 .content-partRight-content-toggle {
     position: absolute;
-    top:4px;
+    top: 4px;
     right: 20px;
     color: #1774a8;
 }

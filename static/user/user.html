@@ -14,7 +14,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>专业问答</title>
+    <title>我的课程</title>
     <meta name="description" content="">
     <!--手机上的一些适配-->
     <!--
@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="../../css/normalize.css"/>
     <link rel="stylesheet" href="../../css/base.css"/>
     <link rel="stylesheet" href="../../css/common.css"/>
-    <link rel="stylesheet" href="../../css/ask.css"/>
+    <link rel="stylesheet" href="../../css/user.css"/>
     <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -59,23 +59,30 @@
             <div class="nav">
                 <ul class="navHeader">
                     <li><a href="../product/product.html">产品学院</a></li>
-                    <li><a href="../course/course.html">课程众筹</a></li>
+                    <li><a href="../courseSeek/seek.html">课程众筹</a></li>
                     <li><a href="../ask/ask.html">专业问答</a></li>
                     <li class="current" href="#"><a href="../user/user.html">我的课程</a></li>
                 </ul>
             </div>
             <div class="loginTop">
                 <ul>
-                    <li><a rel="nofollow" href="../user/login.html">登录</a></li>
-                    <li><a rel="nofollow" href="../user/register.html">注册</a></li>
+                    <li><a rel="nofollow" href="login.html">登录</a></li>
+                    <li><a rel="nofollow" href="register.html">注册</a></li>
                 </ul>
             </div>
             <div class="logged">
                 <ul>
-                    <li><a class="message" href="../user/message.html"><img src="../../img/images/ih_message.png"
-                                                                            alt=""/></a></li>
-                    <li><a class="userCenter" href="../user/user.html"><img src="../../img/images/ih_userImage.png"
-                                                                            alt=""/></a></li>
+                    <li><a class="message" href="user-message.html"><img src="../../img/images/ih_message.png" alt=""/></a></li>
+                    <li>
+                        <a class="userCenter" href="user.html"><img src="../../img/images/ih_userImage.png" alt=""/></a>
+                        <ul id="nav_list">
+                            <li><a href="user.html" id="my_space">Vin_Yang</a></li>
+                            <li><a href="user-note.html" id="my_note">我的笔记</a></li>
+                            <li><a href="user-message.html" id="my_question">我的问答</a></li>
+                            <li><a href="user-information.html" id="my_setting">我的设置</a></li>
+                            <li><a href="#" id="my_logout">退出</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -86,198 +93,102 @@
         <aside class="content-partLeft">
             <div class="content-partLeft-nav">
                 <ul>
-                    <li><a href="#">交流指导</a></li>
-                    <li><a href="#">面试求职</a></li>
-                    <li><a href="#">找合伙人</a></li>
+                    <li><a class="active" href="#">我的课程</a></li>
+                    <li><a href="user-interview.html">我的面试</a></li>
+                    <li><a href="user-note.html">我的笔记</a></li>
+                    <li><a class="nobg" href="user-message.html">我的消息</a></li>
+                    <li><a class="nobg" href="user-information.html">个人资料</a></li>
+                    <li><a class="nobg" href="user-security.html">安全设置</a></li>
                 </ul>
-            </div>
-            <div class="content-partLeft-function">
-                <ul>
-                    <li><a href="#">发起会话</a></li>
-                </ul>
-            </div>
-            <div class="content-partLeft-topicList">
-                <h1>热门话题</h1>
-
-                <p>
-                    <a href="#">交互设计</a>
-                    <a>php</a>
-                    <a>C#</a>
-                    <a>Node.JS</a>
-                </p>
             </div>
         </aside>
         <article class="content-partRight">
-            <div class="content-partRight-header">
-                <p>
-                    <span>我关注的：</span>
-                    <a href="#">交互设计</a>
-                    <a>php</a>
-                    <a>C#</a>
-                    <a>Node.JS</a>
-                </p>
-
-                <div class="content-partRight-header-search">
-                    <label for="searchBox"></label>
-                    <input type="search" id="searchBox">
-                    <input type="button" value="搜索">
-                </div>
-            </div>
-            <hr>
             <div class="content-partRight-content">
-                <div class="content-partRight-content-menu">
-                    <ul>
-                        <li id="menu-newest" class="current">最新</li>
-                        <li id="menu-hottest">最热</li>
-                        <li id="menu-me">@我</li>
-                    </ul>
-                </div>
-                <div class="content-partRight-content-detail">
+               <h1>我的课程</h1>
 
-                    <div id="detail-newest">
-                        <div class="detail-position">
-                            <div class="detail-newest-partLeft">
-                                <img src="../../img/images/ih_userImage.png">
-
-                                <p>会哭的鱼2014</p>
-                            </div>
-                            <div class="detail-newest-partMiddle">
-                                <div class="tittle">
-                                    <img src="../../img/images/ac_detail-newest-partMiddle_01.png">
-                                    <a href="">
-                                        涨姿势了，图片放在canvas里面爽肤水是的 是树大根深高端！！
-                                    </a>
-                                </div>
-                                <div class="replay">
-                                    <img src="../../img/images/ac_detail-newest-partMiddle_02.png">
-                                    <span>
-                                        很对！
-                                    </span>
-                                </div>
-                                <div class="record">
-                                    <p>
-                                        提问时间： <span>14分钟前</span>
-                                    </p>
-                                    <p>
-                                        <a href="#">交互设计</a>
-                                        <a>Node.JS</a>
-                                    </p>
-                                    <p>
-                                        来源： <span>JavaScript的进阶</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="detail-newest-partRight">
-                                <div class="detail-newest-partRight-count">
-                                    <span class="answerNumber">1700</span>
-                                    <br>
-                                    <span class="answer">回答</span>
-                                </div>
-                                <div class="detail-newest-partRight-count bl">
-                                    <span class="answerNumber">1700</span>
-                                    <br>
-                                    <span class="answer">浏览</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="detail-position">
-                            <div class="detail-newest-partLeft">
-                                <img src="../../img/images/ih_userImage.png">
-
-                                <p>甜心2014</p>
-                            </div>
-                            <div class="detail-newest-partMiddle">
-                                <div class="tittle">
-                                    <img src="../../img/images/ac_detail-newest-partMiddle_01.png">
-                                    <a href="">
-                                        node.js异步调用噶怎么姐打算干啥的干啥的干啥的公司打工！
-                                    </a>
-                                </div>
-                                <div class="replay">
-                                    <img src="../../img/images/ac_detail-newest-partMiddle_02.png">
-                                    <span>
-                                        哦……你还知道
-                                    </span>
-                                </div>
-                                <div class="record">
-                                    <p>
-                                        提问时间： <span>20分钟前</span>
-                                    </p>
-                                    <p>
-                                        <a href="#">javascript</a>
-                                        <a>Node.JS</a>
-                                    </p>
-                                    <p>
-                                        来源： <span>JavaScript的进阶</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="detail-newest-partRight">
-                                <div class="detail-newest-partRight-count">
-                                    <span class="answerNumber">700</span>
-                                    <br>
-                                    <span class="answer">回答</span>
-                                </div>
-                                <div class="detail-newest-partRight-count bl">
-                                    <span class="answerNumber">200</span>
-                                    <br>
-                                    <span class="answer">浏览</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="detail-position">
-                            <div class="detail-newest-partLeft">
-                                <img src="../../img/images/ih_userImage.png">
-
-                                <p>会哭的鱼2014</p>
-                            </div>
-                            <div class="detail-newest-partMiddle">
-                                <div class="tittle">
-                                    <img src="../../img/images/ac_detail-newest-partMiddle_01.png">
-                                    <a href="">
-                                        丰东股份广东省收到广东省根深蒂固！！
-                                    </a>
-                                </div>
-                                <div class="replay">
-                                    <img src="../../img/images/ac_detail-newest-partMiddle_02.png">
-                                    <span>
-                                        这个我知道！
-                                    </span>
-                                </div>
-                                <div class="record">
-                                    <p>
-                                        提问时间： <span>44分钟前</span>
-                                    </p>
-                                    <p>
-                                        <a href="#">设计</a>
-                                        <a>Node.JS</a>
-                                    </p>
-                                    <p>
-                                        来源： <span>产品开发</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="detail-newest-partRight">
-                                <div class="detail-newest-partRight-count">
-                                    <span class="answerNumber">1700</span>
-                                    <br>
-                                    <span class="answer">回答</span>
-                                </div>
-                                <div class="detail-newest-partRight-count bl">
-                                    <span class="answerNumber">1700</span>
-                                    <br>
-                                    <span class="answer">浏览</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="content-partRight-course">
+                    <div class="content-partRight-course-logo">
+                        <img src="../../img/images/ic_course_items_01.png" />
                     </div>
-                    <div id="detail-hottest">
-                        <div class="detail-position"></div>
-                    </div>
-                    <div id="detail-me">
-                        <div class="detail-position"></div>
+                    <div class="content-partRight-course-info">
+                        <div class="content-partRight-course-title">产品经理初成长</div>
+                        <div class="content-partRight-course-teacher">讲师：胡澈</div>
+                        <div class="content-partRight-course-grade">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div>学习进度</div>
+                        <div class="content-partRight-course-progressbar">
+                            <div class="content-partRight-course-progress"></div>
+                        </div>
+                        <div class="content-partRight-course-comm">
+                            <span class="content-partRight-course-praise-num">35</span>
+                            <span class="content-partRight-course-praise">赞一下<img src="../../img/images/ic_course_item_praise.png"/></span>
+                            <span class="content-partRight-course-comment-num">35</span>
+                            <span class="content-partRight-course-comment">评论<img src="../../img/images/ic_course_item_comment.png"/></span>
+                            <div class="content-partRight-course-continue">继续学习</div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="content-partRight-course">
+                    <div class="content-partRight-course-logo">
+                        <img src="../../img/images/ic_course_items_01.png" />
+                    </div>
+                    <div class="content-partRight-course-info">
+                        <div class="content-partRight-course-title">产品经理初成长</div>
+                        <div class="content-partRight-course-teacher">讲师：胡澈</div>
+                        <div class="content-partRight-course-grade">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div>学习进度</div>
+                        <div class="content-partRight-course-progressbar">
+                            <div class="content-partRight-course-progress"></div>
+                        </div>
+                        <div class="content-partRight-course-comm">
+                            <span class="content-partRight-course-praise-num">35</span>
+                            <span class="content-partRight-course-praise">赞一下<img src="../../img/images/ic_course_item_praise.png"/></span>
+                            <span class="content-partRight-course-comment-num">35</span>
+                            <span class="content-partRight-course-comment">评论<img src="../../img/images/ic_course_item_comment.png"/></span>
+                            <div class="content-partRight-course-continue">继续学习</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-partRight-course">
+                    <div class="content-partRight-course-logo">
+                        <img src="../../img/images/ic_course_items_01.png" />
+                    </div>
+                    <div class="content-partRight-course-info">
+                        <div class="content-partRight-course-title">产品经理初成长</div>
+                        <div class="content-partRight-course-teacher">讲师：胡澈</div>
+                        <div class="content-partRight-course-grade">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div>学习进度</div>
+                        <div class="content-partRight-course-progressbar">
+                            <div class="content-partRight-course-progress"></div>
+                        </div>
+                        <div class="content-partRight-course-comm">
+                            <span class="content-partRight-course-praise-num">35</span>
+                            <span class="content-partRight-course-praise">赞一下<img src="../../img/images/ic_course_item_praise.png"/></span>
+                            <span class="content-partRight-course-comment-num">35</span>
+                            <span class="content-partRight-course-comment">评论<img src="../../img/images/ic_course_item_comment.png"/></span>
+                            <div class="content-partRight-course-continue">继续学习</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </article>
     </div>

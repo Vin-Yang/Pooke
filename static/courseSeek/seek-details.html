@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>众筹详情</title>
+    <meta name="description" content="">
+    <!--手机上的一些适配-->
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1,ser-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="apple-touch-startup-image" sizes="640x920" href="img/loading-640x920.png"
+          media="screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" sizes="768x1004" href="img/loading-768x1004.png"
+          media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+    <link rel="apple-touch-startup-image" sizes="640x1096" href="img/loading-640x1096.png"
+          media="screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)">
+    <link rel="apple-touch-icon-precomposed" sizes="114X114" href="img/iphone.png">
+    <link rel="apple-touch-icon-precomposed" href="img/android.png">
+    -->
+
+    <!--下面注释的内容是直接引用CDN（内容交付网络）上面的资源，因为那样加载速度会更快-->
+    <!--
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    -->
+    <!--<link rel="stylesheet" href="css/themes/jquery.mobile-1.4.2.css"/>
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css"/>-->
+    <link rel="stylesheet" href="../../css/normalize.css"/>
+    <link rel="stylesheet" href="../../css/base.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/seek-details.css"/>
+    <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">亲，您还在使用着 <strong>过时的</strong> 浏览器. 请您
+    <a href="http://browsehappy.com/">更新</a> 一下吧以使您得到更好的体验哦！
+</p>
+<![end if]-->
+
+<header>
+    <div class="topBar">
+        <nav>
+            <div class="logo">
+                <a href="../../index.html"><img src="../../img/images/ih_logo.png" alt=""/></a>
+            </div>
+            <div class="nav">
+                <ul class="navHeader">
+                    <li><a href="../product/product.html">产品学院</a></li>
+                    <li class="current"><a href="seek.html">课程众筹</a></li>
+                    <li><a href="../ask/ask.html">专业问答</a></li>
+                    <li><a href="../user/user.html">我的课程</a></li>
+                </ul>
+            </div>
+            <div class="loginTop">
+                <ul>
+                    <li><a rel="nofollow" href="../user/login.html">登录</a></li>
+                    <li><a rel="nofollow" href="../user/register.html">注册</a></li>
+                </ul>
+            </div>
+            <div class="logged">
+                <ul>
+                    <li><a class="message" href="../user/user-message.html"><img src="../../img/images/ih_message.png"
+                                                                                 alt=""/></a></li>
+                    <li>
+                        <a class="userCenter" href="../user/user.html"><img src="../../img/images/ih_userImage.png"
+                                                                            alt=""/></a>
+                        <ul id="nav_list">
+                            <li><a href="../user/user.html" id="my_space">Vin_Yang</a></li>
+                            <li><a href="../user/user-note.html" id="my_note">我的笔记</a></li>
+                            <li><a href="../user/user-message.html" id="my_question">我的问答</a></li>
+                            <li><a href="../user/user-information.html" id="my_setting">我的设置</a></li>
+                            <li><a href="#" id="my_logout">退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="header-slider">
+    </div>
+</header>
+<section>
+    <div id="content">
+        <article class="content-partOne">
+            <h1>PHP+MySQL分页原理事实现</h1>
+
+            <h2>PHP</h2>
+
+            <p>
+                <br>
+                现在在App
+                Store电商类、展示类的APP越来越多，如果你还用UITableView来显示一行一行的数据，是不是有点太low了？要想完美的展示你APP中的图片，而又不拘于规规整整的呆板格式，不规则瀑布流就是最好的解决方案。不规则瀑布流用起来也是相当的方便，同时已经成为电商类、展示类APP的主流框架，因此不规则瀑布流布局已为大势所趋。
+                <br>
+                <br>
+                （一）适合人群
+                <br>
+                1、瀑布流在项目中使用的展示及瀑布流技术的介绍；
+                <br>
+                2、UICollectionView的使用详解；
+                <br>
+                3、UICollectionView和UITableView的对比使用；
+                <br>
+                4、规则瀑布流的实现；
+                <br>
+                5、不规则瀑布流的实现；
+                <br>
+                6、网络请求和数据解析的讲解。
+                <br>
+                <br>
+                （二）教学要求
+                <br>
+                1、具有iOS开发基础知识的人群；
+                <br>
+                2、了解表视图的使用；
+                <br>
+                3、了解网络请求和数据解析;
+                <br>
+                想了解iOS相关开发的同学都可以来体验下本课程。
+                <br>
+                <br>
+                （三）备注
+                课程时长：3个小时。
+                <br>
+                <br>
+                （四）应聘截至时间：12月14日 23:59:59。
+            </p>
+
+        </article>
+        <article class="content-partOne">
+            <hr>
+            <div class="hold">
+                <div class="hold-count">
+                    <span class="supportNumber">30</span>元<br>
+                    <span class="support">众筹费用</span>
+                </div>
+                <div class="hold-count bl">
+                    <span class="supportNumber">1800</span><br>
+                    <span class="support">已支持人数</span>
+                </div>
+                <div class="hold-count bl">
+                    <span class="supportNumber">2000</span><br>
+                    <span class="support">目标人数</span>
+                </div>
+                <div class="hold-count bl">
+                    <span class="supportNumber">2</span><br>
+                    <span class="support">剩余天数</span>
+                </div>
+                <div class="hold-count bl">
+                    <a href="share.html">
+                        <span class="supportNumber share"></span><br>
+                        <span class="support">分享</span>
+                    </a>
+                </div>
+            </div>
+            <div class="submit">
+                <a class="employ " href="../pay/pay-seek.html">立即支持</a>
+                <a class="employ" href="seek-employ.html">应聘讲师</a>
+            </div>
+            <hr>
+            <div class="discuss">
+                <div class="discuss-hd">
+                    <div class="hd-left">
+                        <img src="../../img/images/ih_userImage.png">
+                    </div>
+                    <div class="hd-right">
+                        <textarea id="comment-textarea" class="overflowed" placeholder="输入讨论内容…"></textarea>
+                        <span>关联你的微博，让我们更及时的获取您的建议，便于课程改进！</span>
+                        <button id="comment-submit" class="hd-right-submit">发起讨论</button>
+                    </div>
+                </div>
+                <div class="discuss-ctList">
+                    <div class="discuss-ctList-item">
+                        <div class="item-left">
+                            <img src="../../img/images/ih_userImage.png">
+                        </div>
+                        <div class="item-right">
+                            <p><span>剑气箫心</span><span>9月30日</span></p>
+                            <p>
+                                护发素的公司大股东的电饭锅豆腐干豆腐活动方式活动方式海涵地负和东方红都很大方很符合花费很多发生的话东方红好大化的好地方
+                            </p>
+                        </div>
+                    </div>
+                    <div class="discuss-ctList-item">
+                        <div class="item-left">
+                            <img src="../../img/images/ih_userImage.png">
+                        </div>
+                        <div class="item-right">
+                            <p><span>剑气箫心</span><span>9月30日</span></p>
+                            <p>
+                                护发素的公司大股东的电饭锅豆腐干豆腐活动方式活动方式海涵地负和东方红都很大方很符合花费很多发生的话东方红好大化的好地方
+                            </p>
+                        </div>
+                    </div>
+                    <div class="discuss-ctList-item">
+                        <div class="item-left">
+                            <img src="../../img/images/ih_userImage.png">
+                        </div>
+                        <div class="item-right">
+                            <p><span>剑气箫心</span><span>9月30日</span></p>
+                            <p>
+                                护发素的公司大股东的电饭锅豆腐干豆腐活动方式活动方式海涵地负和东方红都很大方很符合花费很多发生的话东方红好大化的好地方
+                            </p>
+                        </div>
+                    </div>
+                    <div class="discuss-ctList-item">
+                        <div class="item-left">
+                            <img src="../../img/images/ih_userImage.png">
+                        </div>
+                        <div class="item-right">
+                            <p><span>剑气箫心</span><span>9月30日</span></p>
+                            <p>
+                                护发素的公司大股东的电饭锅豆腐干豆腐活动方式活动方式海涵地负和东方红都很大方很符合花费很多发生的话东方红好大化的好地方
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<footer>
+    <div class="bottomBar">
+        <nav>
+            <ul class="navFooter">
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">嘉宾入驻</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">友情链接</a></li>
+                <li><a href="#">QQ群:366518004</a></li>
+            </ul>
+            <p>Copyright&copy;2013-2014 ipooke.com</p>
+        </nav>
+    </div>
+</footer>
+<!--下面注释的内容是直接引用CDN（内容交付网络）上面的资源，因为那样加载速度会更快-->
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+-->
+
+<!--下面的内容是加载页面要用的js文件-->
+<script src="../../js/vendor/jquery-1.11.1.min.js"></script>
+<!--<script src="js/vendor/jquery.mobile-1.4.2.min.js"></script>-->
+<script src="../../js/vendor/jquery.cookie.js"></script>
+<script src="../../js/plugins.js"></script>
+<!--下面两个js文件是完成ajax的一个插件-->
+<!--
+<script src="js/mine/base.js"></script>
+<script src="js/mine/score.js"></script>
+-->
+<script src="../../js/index.js"></script>
+
+
+<!-- 下面的注释是引用谷歌的站点统计分析工具的js代码-->
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>-->
+</body>
+</html>

@@ -39,7 +39,7 @@ section {
     float: left;
     border-radius: 5px 5px 0 0;
     width: 248px;
-    border:1px solid #a2a0a0;
+    border: 1px solid #a2a0a0;
     box-shadow: 0px 3px 6px 0.75px #a2a0a0;
     margin: 0 17px;
 }
@@ -70,6 +70,10 @@ section {
     padding: 18px 0;
 }
 
+.course-content p span {
+    color: #028ad6;;
+}
+
 .course-content-button {
     position: absolute;
     display: inline-block;
@@ -84,7 +88,8 @@ section {
     height: 358px;
     background: url("../img/images/ic_partThree_bg.png") no-repeat 0 0;
 }
-.content-partThree-planList{
+
+.content-partThree-planList {
     margin: 0 auto;
     width: 1130px;
     height: 338px;
@@ -92,36 +97,43 @@ section {
     border-top: 1px solid #dcdcdc;
     border-bottom: 1px solid #dcdcdc;
 }
-.plan{
+
+.plan {
     color: #808080;
     border-left: 1px solid #dcdcdc;
     width: 281px;
     height: 338px;
     float: left;
 }
-.plan:hover{
-    background-color:#34b4ef ;
+
+.plan:hover {
+    background-color: #34b4ef;
     color: #ffffff;
 }
-.plan-header{
+
+.plan-header {
     height: 140px;
     line-height: 140px;
     text-align: center;
 }
-.plan-content{
+
+.plan-content {
 
 }
-.plan-content h2{
+
+.plan-content h2 {
     text-align: center;
     font-size: 18px;
 }
-.plan-content p{
+
+.plan-content p {
     margin: 0;
     padding: 0 30px;
     text-indent: 2em;
     font-size: 14px;
     line-height: 25px;
 }
+
 .content-partFour {
     height: 518px;
 }
@@ -134,20 +146,23 @@ section {
 .content-partSix {
     height: 518px;
 }
-.content-partSix-teacherList{
+
+.content-partSix-teacherList {
     margin: 0 auto;
     padding: 46px 1px 0;
     width: 1130px;
     height: 366px;
 }
-.teacher{
+
+.teacher {
     text-align: center;
     margin: 0 1px;
     width: 280px;
     height: 280px;
     float: left;
 }
-.teacher a{
+
+.teacher a {
     display: inline-block;
     width: 150px;
     height: 150px;
@@ -157,7 +172,8 @@ section {
     -o-background-size: cover;
     background-size: cover;
 }
-.teacher a:hover{
+
+.teacher a:hover {
     width: 280px;
     height: 280px;
     background: url("../img/images/ic_teacher_01_hover.png") no-repeat center center;

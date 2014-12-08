@@ -14,7 +14,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>我的课程</title>
+    <title>订单确认</title>
     <meta name="description" content="">
     <!--手机上的一些适配-->
     <!--
@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="../../css/normalize.css"/>
     <link rel="stylesheet" href="../../css/base.css"/>
     <link rel="stylesheet" href="../../css/common.css"/>
-    <link rel="stylesheet" href="../../css/ask.css"/>
+    <link rel="stylesheet" href="../../css/pay-course.css"/>
     <script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -58,10 +58,10 @@
             </div>
             <div class="nav">
                 <ul class="navHeader">
-                    <li><a href="../product/product.html">产品学院</a></li>
-                    <li><a href="../course/course.html">课程众筹</a></li>
+                    <li class="current"><a href="../product/product.html">产品学院</a></li>
+                    <li><a href="../courseSeek/seek.html">课程众筹</a></li>
                     <li><a href="../ask/ask.html">专业问答</a></li>
-                    <li class="current"><a href="#">我的课程</a></li>
+                    <li><a href="../user/user.html">我的课程</a></li>
                 </ul>
             </div>
             <div class="loginTop">
@@ -72,8 +72,19 @@
             </div>
             <div class="logged">
                 <ul>
-                    <li><a class="message" href="../user/message.html"><img src="../../img/images/ih_message.png" alt=""/></a></li>
-                    <li><a class="userCenter" href="../user/user.html"><img src="../../img/images/ih_userImage.png" alt=""/></a></li>
+                    <li><a class="message" href="../user/user-message.html"><img src="../../img/images/ih_message.png"
+                                                                                 alt=""/></a></li>
+                    <li>
+                        <a class="userCenter" href="../user/user.html"><img src="../../img/images/ih_userImage.png"
+                                                                            alt=""/></a>
+                        <ul id="nav_list">
+                            <li><a href="../user/user.html" id="my_space">Vin_Yang</a></li>
+                            <li><a href="../user/user-note.html" id="my_note">我的笔记</a></li>
+                            <li><a href="../user/user-message.html" id="my_question">我的问答</a></li>
+                            <li><a href="../user/user-information.html" id="my_setting">我的设置</a></li>
+                            <li><a href="#" id="my_logout">退出</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -83,38 +94,102 @@
 </header>
 <section>
     <div id="content">
+        <h1>选择您需要的套餐</h1>
         <article class="content-partOne">
-            <div class="content-partOne-courseList">
+            <div class="courseList">
                 <div class="course">
                     <div class="course-header">
-                        <h1>Android中的图片特效处理之黑白之黑白之黑白</h1>
-                        <span>Android</span>
-                        <p>三东方闪SD敢达是归属地感受到三帝国时代归属感三等到三帝国时代归属感三等到三帝国时代归属感三等功三个搜狗山东高速地感受到郭德纲是的</p>
+                        <span>套餐A</span>
+
+                        <h2>394RMB</h2>
                     </div>
-                    <hr>
                     <div class="course-content">
-                        <div class="course-content-count">
-                                <span class="supportNumber">1700</span><br>
-                                <span class="support">已支持人数</span>
-                        </div>
-                        <div class="course-content-count bl">
-                            <span class="supportNumber">1800</span><br>
-                            <span class="support">目标人数</span>
-                        </div>
-                        <div class="course-content-count bl">
-                            <span class="supportNumber">18</span><br>
-                            <span class="support">剩余天数</span>
-                        </div>
+                        <img src="../../img/images/pcc_course-content_bg_001.png">
                     </div>
                     <div class="course-footer">
-                        <div class="course-footer-button blue">
-                            <a href="" class="white">支持开课</a>
-                        </div>
-                        <div class="course-footer-button">
-                            <a href="">应聘讲师</a>
-                        </div>
+                        <p>特级视频教学</p>
+                        <img src="../../img/images/psc_course_beSure.png">
                     </div>
                 </div>
+                <div class="course">
+                    <div class="course-header">
+                        <span>套餐B</span>
+
+                        <h2>394RMB</h2>
+                    </div>
+                    <div class="course-content">
+                        <img src="../../img/images/pcc_course-content_bg_002.png">
+                    </div>
+                    <div class="course-footer">
+                        <p>特级视频教学</p>
+
+                        <p>微信答疑+作业讲解（仅限95人）</p>
+                        <img src="../../img/images/psc_course_beSure.png">
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-header">
+                        <span>套餐C</span>
+
+                        <h2>394RMB</h2>
+                    </div>
+                    <div class="course-content">
+                        <img src="../../img/images/pcc_course-content_bg_003.png">
+                    </div>
+                    <div class="course-footer">
+                        <p>特级视频教学</p>
+
+                        <p>微信答疑+作业讲解+迷你面试</p>
+                        <img src="../../img/images/psc_course_beSure.png">
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-header">
+                        <span>套餐D</span>
+
+                        <h2>394RMB</h2>
+                    </div>
+                    <div class="course-content">
+                        <img src="../../img/images/pcc_course-content_bg_004.png">
+                    </div>
+                    <div class="course-footer">
+                        <p>模拟面试</p>
+                        <img src="../../img/images/psc_course_beSure.png">
+                    </div>
+                </div>
+            </div>
+            <div class="pay">
+                <p>应付金额:<span>999</span>RMB</p>
+                <button id="pay-right-submit" class="pay-right-submit">立即购买</button>
+            </div>
+        </article>
+        <article class="content-partTwo">
+            <div class="brief">
+                <h2>特级视频教学</h2>
+                <hr>
+                <p>
+                    系统化的知识结构，多元化的实时反馈<br>
+                    每月一次的课后作业，专业级将是的深入点评讲解，飞速的产品思维<br>
+                    多名一线互联网实践性到时联合教学，让你与众不同<br>
+                </p>
+            </div>
+            <div class="brief">
+                <h2>微信答疑+作业讲解</h2>
+                <hr>
+                <p>
+                    系统化的知识结构，多元化的实时反馈<br>
+                    每月一次的课后作业，专业级将是的深入点评讲解，飞速的产品思维<br>
+                    多名一线互联网实践性到时联合教学，让你与众不同<br>
+                </p>
+            </div>
+            <div class="brief">
+                <h2>模拟面试</h2>
+                <hr>
+                <p>
+                    系统化的知识结构，多元化的实时反馈<br>
+                    每月一次的课后作业，专业级将是的深入点评讲解，飞速的产品思维<br>
+                    多名一线互联网实践性到时联合教学，让你与众不同<br>
+                </p>
             </div>
         </article>
     </div>
