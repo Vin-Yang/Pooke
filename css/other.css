@@ -1,0 +1,63 @@
+/* ======================================
+   自己的css样式
+   ====================================== */
+/*header*/
+header {
+    height: 588px;
+    background: url("../img/images/abh_bg_01.png") no-repeat top center;
+}
+
+header .logoLarge {
+    text-align: center;
+    width: 1136px;
+    margin: 0 auto;
+    padding: 80px 0 0;
+}
+
+/*content*/
+section {
+    text-align: center;
+    width: 100%;
+    min-height: 500px;
+    background: #ffffff url("../img/images/abc_bg_01.png") repeat-x 0 0;
+}
+
+section img {
+    margin: 70px 0 0;
+}
+
+#content {
+    width: 1136px;
+    margin: 0 auto;
+}
+
+.content-partOne {
+    height: 500px;
+
+}
+
+.content-partTwo {
+    height: 642px;
+}
+
+.content-partThree {
+    background: #ffffff url("../img/images/abc_partThree_bg_01.png") no-repeat left bottom;
+    height: 600px;
+}
+
+.content-partThree-content {
+    width: 1136px;
+    margin: 0 auto;
+}
+
+.content-partFour {
+    width: 1136px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/*footer*/
+footer {
+    height: 123px;
+    background-image: none;
+}
