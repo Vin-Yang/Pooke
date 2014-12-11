@@ -93,6 +93,12 @@
 <section>
     <div id="content">
         <aside class="content-partLeft">
+            <div class="user-info-wrapper">
+                <a href="#">
+                    <div class="avatar"><img src="../../img/images/ic_left-part_user_avatar.png"/></div>
+                    <div class="username">剑气箫心</div>
+                </a>
+            </div>
             <div class="content-partLeft-nav">
                 <ul>
                     <li><a href="user.html">我的课程</a></li>
@@ -106,86 +112,54 @@
         </aside>
         <article class="content-partRight">
             <div class="content-partRight-content">
-                <h1>安全设置</h1>
-                <div class="content-partRight-content-form">
-                    <div class = "content-partRight-form-header">
-                        <span>密码设置</span>
-                        <div class="content-partRight-content-toggle">收起</div>
-                    </div>
-                    <form action="" method="">
-                        <div class="content-partRight-form-control">
-                            <label for="old_password">原密码:</label>
-                            <input type="password" name="old_password" />
+                <ul>
+                    <li class="active">安全设置</li>
+                </ul>
+                <div class="security-form-wrapper">
+                    <a href="#" class="btn-form-toggle">收起</a>
+                    <form action="" method="post">
+                        <div class="form-control-group">
+                            <label class="fixed-label" for="old_password">原密码:</label>
+                            <input class="form-control" type="text" id="old_password" type="password" name="old_password" />
                         </div>
-                        <div class="content-partRight-form-control">
-                            <label for="new_password">新密码:</label>
-                            <input type="password" name="new_password" />
+                        <div class="form-control-group">
+                            <label class="fixed-label" for="new_password">新密码:</label>
+                            <input class="form-control" type="text" id="new_password" type="password" name="new_password" />
                         </div>
-                        <div class="content-partRight-form-control">
-                            <label>密码强度:</label>
-                            <div class="content-partRight-form-strength"><span></span><span></span><span></span></div>
+                        <div class="form-control-group">
+                            <label class="fixed-label">密码强度:</label>
+                            <div class="form-control password-strength-control">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
-                        <div class="content-partRight-form-control">
-                            <label for="new_password">确认密码:</label>
-                            <input type="password" name="new_password" />
+                        <div class="form-control-group">
+                            <label class="fixed-label" for="repeat_password">确认密码:</label>
+                            <input class="form-control" type="password" id="repeat_password" name="repeat_password" />
                         </div>
-                        <div class="content-partRight-form-control">
-                            <input type="button" class="btn" value="保存" />
+                        <div class="form-control-group">
+                            <label class="fixed-label"></label>
+                            <input class="form-control" type="submit" value="保存" />
                         </div>
                     </form>
                 </div>
 
-                <div class="content-partRight-content-form">
-                    <div class = "content-partRight-form-header">
-                        <span>绑定邮箱:未绑定登录邮箱</span>
-                        <div class="content-partRight-content-toggle">收起</div>
-                    </div>
-                    <form action="" method="">
-                        <div class="content-partRight-form-control">
-                            <label for="old_password">原密码:</label>
-                            <input type="password" name="old_password" />
-                        </div>
-                        <div class="content-partRight-form-control">
-                            <label for="new_password">新密码:</label>
-                            <input type="password" name="new_password" />
-                        </div>
-                        <div class="content-partRight-form-control">
-                            <label>密码强度:</label>
-                            <div class="content-partRight-form-strength"><span></span><span></span><span></span></div>
-                        </div>
-                        <div class="content-partRight-form-control">
-                            <label for="new_password">确认密码:</label>
-                            <input type="password" name="new_password" />
-                        </div>
-                        <div class="content-partRight-form-control">
-                            <input type="button" class="btn" value="保存" />
+                <div class="security-email-wrapper">
+                    <a href="#" class="btn-form-toggle">收起</a>
+                    <form method="post" action="">
+                        <div class = "form-control-group">
+                            <label class="fixed-label">绑定邮箱:</label>
+                            <label class="form-tips-control">未绑定登录邮箱</label>
                         </div>
                     </form>
                 </div>
-                <div class="content-partRight-content-form">
-                    <div class = "content-partRight-form-header">
-                        <span>绑定手机:130********</span>
-                        <div class="content-partRight-content-toggle">收起</div>
-                    </div>
-                    <form action="" method="">
-                        <div class="content-partRight-form-control">
-                            <label for="old_password">原密码:</label>
-                            <input type="password" name="old_password" />
-                        </div>
-                        <div class="content-partRight-form-control">
-                            <label for="new_password">新密码:</label>
-                            <input type="password" name="new_password" />
-                        </div>
-                        <div class="content-partRight-form-control">
-                            <label>密码强度:</label>
-                            <div class="content-partRight-form-strength"><span></span><span></span><span></span></div>
-                        </div>
-                        <div class="content-partRight-form-control">
-                            <label for="new_password">确认密码:</label>
-                            <input type="password" name="new_password" />
-                        </div>
-                        <div class="content-partRight-form-control">
-                            <input type="button" class="btn" value="保存" />
+                <div class="security-phone-wrapper">
+                    <a href="#" class="btn-form-toggle">收起</a>
+                    <form method="post" action="">
+                        <div class = "form-control-group">
+                            <label class="fixed-label">绑定手机:</label>
+                            <label class="form-tips-control">130*******</label>
                         </div>
                     </form>
                 </div>
