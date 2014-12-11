@@ -1,6 +1,11 @@
 /* ======================================
    自己的css样式
    ====================================== */
+.clearfix:after{ content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix{ display:inline-block;}
+.clearfix{ height:1%;}
+.clearfix{ display:block;}
+
 body {
     background: #fafafa;
 }
@@ -28,6 +33,28 @@ section {
 .content-partLeft {
     float: left;
     width: 260px;
+}
+
+.content-partLeft .user-info-wrapper {
+    height: 230px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-bottom: 3px solid #e6e6e6;
+}
+.content-partLeft .user-info-wrapper .avatar {
+    width: 120px;
+    height: 120px;
+    margin: auto auto;
+    padding: 35px 0 25px 0;
+}
+.content-partLeft .user-info-wrapper .avatar img {
+    width: 100%;
+    height: 100%;
+}
+.content-partLeft .user-info-wrapper .username {
+    color: #4c4c4c;
+    text-align: center;
+    font-size: 14px;
 }
 
 .content-partLeft ul {
@@ -59,6 +86,9 @@ section {
     height: 49px;
     border-bottom: 1px solid #dcdcdc;
     text-decoration: none;
+}
+.content-partLeft-nav ul li:last-child a {
+    border-bottom: 0;
 }
 
 .content-partLeft-nav ul li a.nobg {
@@ -184,7 +214,7 @@ section {
     cursor: pointer;
     list-style: none;
     padding: 0 0 0 0;
-    margin: 0 0 20px;
+    margin: 0px;
     border-bottom: 1px solid #cccccc;
 }
 
@@ -210,143 +240,200 @@ section {
     border-bottom: 3px solid #028ad6;
 }
 
-.content-partRight-course {
+.content-partRight-content .course-wrapper {
     position: relative;
     border-bottom: 1px solid #d6d6d6;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-.content-partRight-course:after {
-    clear: both;
-    display: block;
-    visibility: hidden;
-    height: 0px;
-    content: '.';
+.content-partRight-content .course-wrapper:last-child {
+    border-bottom: 0;
 }
-
-.content-partRight-course-logo {
-    width: 222px;
-    height: 146px;
+.course-wrapper .course-logo {
+    width: 225px;
+    height: 145px;
     float: left;
 }
 
-.content-partRight-course-logo img {
+.course-wrapper .course-logo img {
     width: 100%;
     height: 100%;
 }
 
-.content-partRight-course-info {
-    margin-left: 25px;
-    float: left;
+.course-wrapper .course-info {
+    margin-left: 250px;
 }
 
-.content-partRight-course-info div {
-    margin-bottom: 5px;
+.course-wrapper .course-info div {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 600;
 }
-
-.content-partRight-course-progressbar {
+.course-wrapper .course-info .course-title {
+    height: 26px;
+}
+.course-wrapper .course-info .course-teacher {
+    height: 28px;
+}
+.course-wrapper .course-info .course-star {
+    height: 30px;
+}
+.course-wrapper .course-info .course-star span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/images/pc_course_items_04.png") no-repeat 0 0;
+}
+.course-wrapper .course-info .course-progress-label {
+    height: 20px;
+    color: #b3b3b3;
+    font-size: 12px;
+    line-height: 12px;
+}
+.course-wrapper .course-info .course-progressbar {
     width: 300px;
-    height: 5px;
+    height: 4px;
     background-color: #d6d6d6;
 }
-
-.content-partRight-course-progress {
+.course-wrapper .course-info .course-progress {
     width: 50%;
     height: 100%;
     background-color: #34b4ef;
 }
-
-.content-partRight-course-grade span {
+.course-wrapper .course-footer {
+    position: relative;
+}
+.course-wrapper .course-footer .course-praise,
+.course-wrapper .course-footer .course-comment {
     display: inline-block;
+    margin: 10px 10px 0 0;
+}
+.course-footer .course-praise .course-praise-num,
+.course-footer .course-comment  .course-comment-num {
+    height: 27px;
+    padding: 0 13px 0 13px;
+    float: left;
+    color: #ffffff;
+    line-height: 27px;
+    border-radius: 3px;
+}
+.course-footer .course-praise .course-praise-num {
+    background-color: #fa819e;
+}
+.course-footer .course-comment  .course-comment-num {
+    background-color: #3fbcef;
+}
+.course-footer .course-praise .btn-course-praise,
+.course-footer .course-comment .btn-course-comment {
+    height: 27px;
+    margin-left: 1px;
+    margin-right: 10px;
+    padding: 0 20px 0 10px;
+    float: left;
+    position: relative;
+    color: #ffffff;
+    border-radius: 3px;
+    line-height: 27px;
+}
+.course-footer .course-praise .btn-course-praise {
+    background-color: #fa819e;
+}
+.course-footer .course-comment .btn-course-comment {
+    background-color: #3fbcef;
+}
+
+.course-footer  .btn-course-praise:after,
+.course-footer  .btn-course-comment:after {
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    top: 0;
+    right: -13px;
+    content: " ";
+    background-size: cover;
+}
+.course-footer .btn-course-praise:after {
+    background-image: url('../img/images/ic_course_item_praise.png');
+}
+.course-footer  .btn-course-comment:after {
+    background-image: url('../img/images/ic_course_item_comment.png');
+}
+
+.course-wrapper .btn-course-continue {
+    width: 122px;
+    height: 37px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    color: #ffffff;
+    background-color: #34b4ef;
+    font-size: 18px;
+    text-align: center;
+    line-height: 37px;
+}
+.course-feedback {
+}
+.course-feedback .form-control {
+    padding-right: 20px;
+}
+.course-feedback textarea {
+    width: 100%;
+    height: 85px;
+    padding: 10px;
+    color: #999999;
+    overflow: hidden;
+    resize: none;
+    outline: none;
+    border: 1px solid #d6d6d6;
+    font-size: 14px;
+}
+.course-feedback textarea:hover,
+.course-feedback textarea:focus {
+    border: 1px solid #d6d6d6;
+}
+.course-feedback .form-footer {
+    width: 100%;
+    height: 44px;
+    position: relative;
+    border: 1px solid #d6d6d6;
+    border-top: transparent;
+}
+.course-feedback .form-footer .course-star {
+    height: 44px;
+    margin: 0 15px 0 15px;
+    display: inline-block;
+ }
+.course-feedback .form-footer .course-star span {
     width: 15px;
-    height: 20px;
+    height: 15px;
+    margin: 14px 0 15px 0;
+    float: left;
     background: url("../img/images/pc_course_items_04.png") no-repeat 0 0;
 }
-
-.content-partRight-course-praise-num {
-    -webkit-border-bottom-left-radius: 3px;
-    -webkit-border-top-left-radius: 3px;
-    -moz-border-radius-bottomleft: 3px;
-    -moz-border-radius-topleft: 3px;
-    padding: 0 10px 0 10px;
-    color: #ffffff !important;
-    background-color: #fa819e;
-}
-
-.content-partRight-course-praise {
-    -webkit-border-bottom-right-radius: 15px;
-    -webkit-border-top-right-radius: 15px;
-    -moz-border-radius-bottomright: 3px;
-    -moz-border-radius-topright: 3px;
-    padding-right: 0px !important;
-    padding: 0 10px 0 10px;
-    color: #ffffff !important;
-    background-color: #fa819e;
-}
-
-.content-partRight-course-praise img {
-    position: relative;
-    top: -2px;
-    height: 20px;
-    width: auto;
-}
-
-.content-partRight-course-comment-num {
-    -webkit-border-bottom-left-radius: 3px;
-    -webkit-border-top-left-radius: 3px;
-    -moz-border-radius-bottomleft: 3px;
-    -moz-border-radius-topleft: 3px;
-    padding: 0 10px 0 10px;
-    color: #ffffff !important;
-    background-color: #3fbcef;
-}
-
-.content-partRight-course-comment {
-    -webkit-border-bottom-right-radius: 15px;
-    -webkit-border-top-right-radius: 15px;
-    -moz-border-radius-bottomright: 3px;
-    -moz-border-radius-topright: 3px;
-    padding-right: 0px !important;
-    padding: 0 10px 0 10px;
-    color: #ffffff !important;
-    background-color: #3fbcef;
-}
-
-.content-partRight-course-comment img {
-    position: relative;
-    top: -2px;
-    height: 20px;
-    width: auto;
-}
-
-.content-partRight-course-comm {
-    width: 100%;
-    color: #ffffff;
-}
-
-.content-partRight-course-continue {
+.course-feedback .form-footer .star-tips {
+    margin-left: 15px;
     display: inline-block;
-    position: relative;
-    left: 150px;
+    color: #808080;
+    font-size: 14px;
+    line-height: 44px;
+}
+.course-feedback .btn-submit {
+    width: 93px;
+    height: 28px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #fff;
     background-color: #34b4ef;
-    padding: 5px 10px 5px 10px;
-
+    border: 0;
 }
 
 /*以下是面试页面样式*/
-.content-partRight-content-wrap {
+.content-partRight-content .interview-wrapper  {
     margin-top: 20px;
 }
-
-.content-partRight-content-wrap:after {
-    clear: both;
-    content: '.';
-    height: 0px;
-    visibility: hidden;
-    display: block;
-}
-
-.content-partRight-content-wrap .interview-thumbnail {
+.interview-wrapper .interview-thumbnail {
     width: 222px;
     height: 147px;
     float: left;
@@ -358,138 +445,155 @@ section {
     text-align: center;
 }
 
-.content-partRight-content-wrap .interview-info {
+.interview-wrapper .interview-info {
     float: left;
-    margin-left: 20px;
-    font-size: 16px;
-    line-height: 26px;
+    margin: 22px 0 0 35px;
+    color: #808080;
+    font-size: 14px;
+    line-height: 25px;
 }
-
-.content-partRight-content-wrap .interview-info span {
-    display: block;
+.interview-wrapper .interview-info .btn-join {
     margin-top: 20px;
-}
-
-.content-partRight-content-wrap .interview-info span a {
+    display: inline-block;
     color: #3fbcef;
+    text-decoration: underline;
+    line-height: 14px;
+    font-weight: 600;
 }
 
 /*以下是笔记页面样式*/
 
-.content-partRight-note-header {
-    margin-bottom: 20px;
+.content-partRight-content .label-wrapper {
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
-.content-partRight-note-header .note-label {
-    display: inline-block;
-    padding: 2px 8px 2px 8px;
-    margin: 0 10px 10px 0;
+.label-wrapper .note-label {
+    height: 25px;
+    padding: 0 15px 0 15px;
+    margin: 8px 8px 0 0;
+    float: left;
     border-radius: 2px;
     color: #ffffff;
     background-color: #d6d6d6;
+    font-size: 13px;
+    line-height: 25px;
 }
 
-.content-partRight-note-header .note-label.active {
-    background-color: #3fbcef !important;
+.label-wrapper .note-label.active {
+    background-color: #3fbcef;
 }
 
-.content-partRight-note-wrap {
+.content-partRight-content .note-wrapper {
     position: relative;
-    margin: 0 0 5px 20px;
-    padding: 0px 0 10px 25px;
+    margin: 0 0 10px 33px;
+    padding: 0px 0 10px 30px;
     border-left: 2px solid #aaaaaa;
 }
-
-.content-partRight-note-wrap .note-title {
-    height: 40px;
-    overflow: hidden;
-    color: #555555;
-    font-size: 17px;
-}
-
-.content-partRight-note-wrap .note-avatar {
-    width: 25px;
-    height: 25px;
+.note-wrapper:before {
+    width: 33px;
+    height: 33px;
     position: absolute;
-    left: -13px;
+    top: -6px;
+    left: -18px;
+    content: " ";
     border-radius: 100%;
     background: url('../img/images/ic_course_note-avatar.png') center;
 }
 
-.content-partRight-note-wrap .note-avatar.active {
+.note-wrapper.active:before {
     background: url('../img/images/ic_course_note-avatar-hover.png') center;
 }
-
+.note-wrapper .note-title {
+    margin-bottom: 20px;
+    overflow: hidden;
+    color: #4d4d4d;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+}
+.note-wrapper .note-content {
+    color: #808080;
+    font-size: 14px;
+    line-height: 25px;
+}
 /*以下是我的消息页面样式*/
 
-.content-partRight-message-wrap {
+.content-partRight .message-wrapper {
     border-bottom: 1px solid #cccccc;
+    margin-top: 30px;
     padding-bottom: 20px;
-    margin-bottom: 20px;
 }
 
-.content-partRight-message-wrap .message-header {
+.message-wrapper .message-header {
 
 }
 
-.content-partRight-message-wrap .from-user-info {
-    width: 150px;
+.message-wrapper .fromuser-info {
+    width: 130px;
     float: left;
     text-align: center;
 }
 
-.content-partRight-message-wrap .from-user-info .avatar {
-    width: 50px;
-    height: 50px;
+.message-wrapper .fromuser-info .avatar {
+    width: 40px;
+    height: 40px;
     margin: 0 auto;
-    border-radius: 100%;
+    border-radius: 50%;
     overflow: hidden;
 }
 
-.content-partRight-message-wrap .from-user-info {
-    float: left;
+.message-wrapper .fromuser-info .username {
+    color: #a8a1c1;
+    margin-top: 12px;
+    font-size: 12px;
 }
 
-.content-partRight-message-wrap .from-user-info .avatar img {
+.message-wrapper .fromuser-info .avatar img {
     width: 100%;
     height: 100%;
 }
 
-.content-partRight-message-wrap .message-info {
+.message-wrapper .message-info {
+    width: 646px;
+    margin-top: 5px;
     float: left;
 }
 
-.content-partRight-message-wrap .message-info .time {
+.message-wrapper .message-info .time {
+    margin-right: 20px;
     display: inline-block;
+    font-size: 12px;
 }
 
-.content-partRight-message-wrap .message-info .label {
+.message-wrapper .message-info .label {
     display: inline-block;
+    margin-right: 10px;
 }
 
-.content-partRight-message-wrap .message-info .label span {
+.message-wrapper .message-info .label a {
     color: #ffffff;
     border-radius: 3px;
-    padding: 2px 10px 2px 10px;
-    margin-right: 10px;
+    padding: 6px 10px 6px 10px;
     background-color: #3fbcef;
-    font-size: 16px;
+    letter-spacing: 1px;
+    font-size: 12px;
 }
 
-.content-partRight-message-wrap .message-info .title {
+.message-wrapper .message-info .title {
     position: relative;
-    margin-top: 10px;
+    margin-top: 15px;
     color: #777777;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-.content-partRight-message-wrap .message-info .top {
+.message-wrapper .message-info .top {
     color: #ff7e00;
     font-weight: normal;
 }
 
-.content-partRight-message-wrap .message-info .tips {
+.message-wrapper .message-info .tips {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -499,128 +603,263 @@ section {
     background: url('../img/images/ic_course_message-tips.png') center;
 }
 
-.content-partRight-message-wrap .message-content {
-    color: #99a2a7;
-    margin-left: 150px;
+.message-wrapper .message-content {
+    padding-left: 3px;
+    color: #99a1a6;
+    font-size: 12px;
+}
+.message-wrapper .message-content .user-info {
 }
 
-.content-partRight-message-wrap .message-content .user {
-
-}
-
-.content-partRight-message-wrap .message-content .user .avatar img {
+.message-wrapper .message-content .user-info .avatar img {
     width: 17px;
     height: 17px;
 }
 
-.content-partRight-message-wrap .message-content .user .name {
-    color: #333333;
+.message-wrapper .message-content .user-info .username {
+    color: #303538;
 }
 
-.content-partRight-message-wrap .message-op {
-    margin: 20px 0 0 160px;
+.message-wrapper .message-footer {
+    margin: 20px 0 0 0px;
 }
 
-.content-partRight-message-wrap .message-op div {
+.message-wrapper .message-footer a {
     height: 15px;
-    font-size: 15px;
-    line-height: 15px;
-    display: inline-block;
     margin-right: 40px;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 22px;
+    display: inline-block;
+    color: #6d8ba7;
+    font-size: 12px;
+    line-height: 15px;
 }
-
-.content-partRight-message-wrap .message-op .comment {
+.message-wrapper .message-footer .comment {
     background: url('../img/images/ic_course_message_comment.png') no-repeat;
 }
 
-.content-partRight-message-wrap .message-op .view {
+.message-wrapper .message-footer .view {
     background: url('../img/images/ic_course_message_view.png') no-repeat;
 }
 
-.content-partRight-message-wrap .message-op .praise {
+.message-wrapper .message-footer .praise {
     background: url('../img/images/ic_course_message_praise.png') no-repeat;
 }
 
-.content-partRight-message-wrap .message-op .delete {
+.message-wrapper .message-footer .delete {
     background: url('../img/images/ic_course_message_delete.png') no-repeat;
 }
 
-.content-partRight-message-wrap .message-op .top {
+.message-wrapper .message-footer .top {
     background: url('../img/images/ic_course_message_top.png') no-repeat;
 }
 
-/*以下是安全设置页面的样式*/
-.content-partRight-content-form {
-    position: relative;
-    margin: 20px 0 0 0;
-    padding: 0 5px 0 5px;
-    border: 1px solid #d6d6d6;
+/*form 组件*/
+.form-control-group {
+    height: 26px;
+    margin-bottom: 13px;
 }
-
-.content-partRight-form-control {
-    margin: 10px 0 20px 0;
+.form-control-group:last-child {
+    margin-bottom: 0;
 }
-
-.content-partRight-form-control label {
-    width: 100px;
+.form-control-group:after {
+    width: 1px;
+    height: 1px;
+    display: block;
+    visibility: hidden;
+    content: '.';
+}
+.form-control-group .form-control {
+    float: left;
+}
+.form-control-group .form-control-group {
+    float: left;
+}
+.form-control-group label {
+    float: left;
+    font-size: 14px;
+}
+.form-control-group .fixed-label {
+    width: 95px;
+    height: 26px;
+    padding: 0 10px 0 10px;
+    line-height: 26px;
     text-align: right;
-    display: inline-block;
-    color: #828282;
-    font-size: 16px;
 }
-
-.content-partRight-form-control input {
-    height: 18px;
-    width: 240px;
-    padding: 4px 5px 4px 5px;
+.form-control-group input[type='text'].form-control,
+.form-control-group input[type='password'].form-control {
+    width: 255px;
+    height: 24px;
+    margin: 0;
+    padding: 0 10px 0 10px;
     color: #828282;
     font-family: "Microsoft Yahei", "微软雅黑", Tahoma, Arial, STHeiti, sans-serif;
-    border-radius: 5px;
-    border: 1px solid #a2a0a0;
+    font-size: 14px;
+    border-radius: 3px;
+    border:1px solid #cccccc;
 }
-
-.content-partRight-form-control input.radio {
-    width: 25px;
-    text-align: left;
+.form-control-group input.form-control:active,
+.form-control-group input.form-control:hover,
+.form-control-group input.form-control:focus {
+    border: 1px solid #cccccc;
+    outline: none;
+    background-color: #fff;
 }
-
-.content-partRight-form-control select {
-    width: 80px;
-    color: #555555;
-    text-align: left;
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    border: 1px solid #cccccc;
 }
-
-.content-partRight-form-strength {
-    display: inline;
+.form-control-group input[type='radio'].form-control {
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;
+    float: left;
 }
-
-.content-partRight-form-strength span {
-    width: 50px;
-    height: 10px;
-    margin: 0 5px 0 0;
-    display: inline-block;
-    background-color: #828282;
+.form-control-group .radio-label {
+    margin: 0 55px 0 10px;
 }
-
-.content-partRight-form-control .btn {
-    width: 60px;
-    height: 25px;
-    padding: 0px;
-    position: relative;
-    left: 105px;
-    color: #ffffff;
-    line-height: 25px;
-    background-color: #f7730e;
-    border-radius: 2px;
+.form-control-group select {
+    min-width: 100px;
+    height: 26px;
+    color: #808080;
+    font-size: 14px;
+    float: left;
+}
+.form-control-group select:active,
+.form-control-group select:hover,
+.form-control-group select:focus {
+    border: 1px solid #cccccc;
+    outline: none;
+}
+.form-control-group select option {
+    height: 30px;
+    line-height: 20px;
+    background-color: #ffffff;
+}
+.form-control-group .select-label {
+    float: left;
+    margin: 0 5px 0 5px;
+}
+input[type='submit'].form-control {
+    width: 46px;
+    height: 22px;
+    color: #fff;
+    background-color: #f58127;
+    font-size: 12px;
+    line-height: 22px;
+    border: 0;
+    border-radius: 1px;
+}
+input[type='submit'].form-control:active,
+input[type='submit'].form-control:hover,
+input[type='submit'].form-control:focus {
+    background-color: #f58127;
+    outline: none;
     border: 0;
 }
+.form-control.password-strength-control:after {
+    width: 1px;
+    height: 1px;
+    display: block;
+    visibility: hidden;
+    content: '.';
+}
+.form-control.password-strength-control span {
+    width: 40px;
+    height: 10px;
+    display: inline-block;
+    background-color: #e6e6e6;
+}
 
-.content-partRight-content-toggle {
+/*个人资料页面*/
+.content-partRight-content .information-wrapper {
+    margin-top: 25px;
+    position: relative;
+}
+.information-wrapper .btn-toggle {
+    width: 36px;
+    height: 30px;
     position: absolute;
-    top: 4px;
-    right: 20px;
+    top: -40px;
+    right: 0;
+    padding-left: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #4d4d4d;
+    background-image: url('../img/images/ic_security-edit-btn.png');
+    background-size: cover;
+}
+.information-wrapper .btn-information-submit {
+    display: block;
+}
+.information-wrapper .btn-information-edit {
+    display: none;
+}
+.information-wrapper .information-form-wrapper  {
+    display: block;
+}
+.information-wrapper .information-display-wrapper {
+    display: none;
+}
+.information-display-wrapper .information-row {
+    height: 40px;
+    margin-bottom: 13px;
+}
+.information-display-wrapper .information-row:last-child {
+    margin-bottom: 0;
+}
+.information-display-wrapper .information-row:after {
+    width: 1px;
+    height: 1px;
+    display: block;
+    visibility: hidden;
+    content: '.';
+}
+.information-display-wrapper .information-row label {
+    float: left;
+    font-size: 14px;
+}
+.information-display-wrapper .information-row .fixed-label {
+    width: 95px;
+    padding: 0 10px 0 10px;
+    line-height: 14px;
+    text-align: right;
+}
+.information-display-wrapper .information-row .data {
+    float: left;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: right;
+}
+.information-display-wrapper .information-row a.data {
+    color: #ff6666;
+    text-decoration: underline;
+}
+/*安全中心页面*/
+.security-form-wrapper {
+    position: relative;
+    margin: 20px 0 10px 0;
+    padding: 10px 0 10px 0;
+    border: 1px solid #d6d6d6;
+}
+.security-email-wrapper {
+    position: relative;
+    margin: 0 0 10px 0;
+    padding: 10px 0 10px 0;
+    border: 1px solid #d6d6d6;
+}
+.security-phone-wrapper {
+    position: relative;
+    margin: 0 0 10px 0;
+    padding: 10px 0 10px 0;
+    border: 1px solid #d6d6d6;
+}
+.btn-form-toggle {
+    position: absolute;
+    top: 15px;
+    right: 22px;
     color: #1774a8;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 /*footer*/

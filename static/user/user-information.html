@@ -93,6 +93,12 @@
 <section>
     <div id="content">
         <aside class="content-partLeft">
+            <div class="user-info-wrapper">
+                <a href="#">
+                    <div class="avatar"><img src="../../img/images/ic_left-part_user_avatar.png"/></div>
+                    <div class="username">剑气箫心</div>
+                </a>
+            </div>
             <div class="content-partLeft-nav">
                 <ul>
                     <li><a href="user.html">我的课程</a></li>
@@ -106,58 +112,111 @@
         </aside>
         <article class="content-partRight">
             <div class="content-partRight-content">
-                <h1>我的资料</h1>
-                <div class="content-partRight-user-info">
-                    <form method="post" action="">
-                        <div class="content-partRight-form-control">
-                            <label for="nick-name">昵称:</label>
-                            <input name="nick-name" />
+                <ul>
+                    <li class="active">我的资料</li>
+                </ul>
+                <div class="information-wrapper">
+                    <a href="#" class="btn-toggle btn-information-submit">保存</a>
+                    <a href="#" class="btn-toggle btn-information-edit">编辑</a>
+                    <div class="information-form-wrapper">
+                        <form method="post" action="" name="information-form">
+                            <div class="form-control-group">
+                                <label class="fixed-label" for="nick-name">昵称:</label>
+                                <input class="form-control" type="text" id="nick-name" name="nick-name" />
+                            </div>
+                            <div class="form-control-group">
+                                <label class="fixed-label" for="real-name">真实姓名:</label>
+                                <input class="form-control" type="text" id="real-name" name="real-name" />
+                            </div>
+                            <div class="form-control-group">
+                                <label class="fixed-label">性别:</label>
+                                <div class="form-control-group">
+                                    <input  class="form-control"  id="sex-man" type="radio" name="sex" value="男" />
+                                    <label class="radio-label" for="sex-man">男</label>
+                                </div>
+                                <div class="form-control-group">
+                                    <input  class="form-control" id="sex-women" type="radio" name="sex" value="女" />
+                                    <label class="radio-label" for="sex-women">女</label>
+                                </div>
+                            </div>
+                            <div class="form-control-group">
+                                <label  class="fixed-label" for="birthday">生日:</label>
+                                <input class="form-control" type="text" id="birthday" type="password" name="birthday" />
+                            </div>
+                            <div class="form-control-group">
+                                <label class="fixed-label" id="qq" for="qq">QQ:</label>
+                                <input  class="form-control" type="text" name="qq" />
+                            </div>
+                            <div class="form-control-group">
+                                <label class="fixed-label" id="email" for="email">邮箱:</label>
+                                <input  class="form-control" type="text" name="email" />
+                            </div>
+                            <div class="form-control-group">
+                                <label class="fixed-label" for="phone">手机:</label>
+                                <input  class="form-control" id="phone" type="text" name="phone" />
+                            </div>
+                            <div class="form-control-group">
+                                <label class="fixed-label" for="address">现居地址:</label>
+                                <div class="form-control-group">
+                                    <select id="address">
+                                        <option>陕西</option>
+                                        <option>陕西</option>
+                                    </select>
+                                    <label class="select-label">省</label>
+                                </div>
+                                <div class="form-control-group">
+                                    <select>
+                                        <option>西安</option>
+                                    </select>
+                                    <label class="select-label">市/区</label>
+                                </div>
+                            </div>
+                            <div class="form-control-group">
+                                <label class="fixed-label" for="address">职业:</label>
+                                <select>
+                                    <option>学生</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="information-display-wrapper">
+                        <div class="information-row">
+                            <label class="fixed-label">昵称:</label>
+                            <label class="data">剑气箫心</label>
                         </div>
-                        <div class="content-partRight-form-control">
-                            <label for="real-name">真实姓名:</label>
-                            <input name="real-name" />
+                        <div class="information-row">
+                            <label class="fixed-label">真实姓名:</label>
+                            <label class="data">赵家琪</label>
                         </div>
-                        <div class="content-partRight-form-control">
-                            <label for="sex">性别:</label>
-                            <input type="radio" name="sex" class="radio" value="男" />男&nbsp;
-                            <input type="radio" name="sex" class="radio" value="女" />女
+                        <div class="information-row">
+                            <label class="fixed-label">性别:</label>
+                            <label class="data">女</label>
                         </div>
-                        <div class="content-partRight-form-control">
-                            <label for="birthday">生日:</label>
-                            <input type="password" name="birthday" />
+                        <div class="information-row">
+                            <label class="fixed-label">生日:</label>
+                            <label class="data">1994-01-18</label>
                         </div>
-                        <div class="content-partRight-form-control">
-                            <label for="qq">QQ:</label>
-                            <input type="password" name="qq" />
+                        <div class="information-row">
+                            <label class="fixed-label">QQ:</label>
+                            <label class="data">994611797</label>
                         </div>
-                        <div class="content-partRight-form-control">
-                            <label for="email">邮箱:</label>
-                            <input type="password" name="email" />
+                        <div class="information-row">
+                            <label class="fixed-label">邮箱:</label>
+                            <label class="data">994611797@qq.com</label>
                         </div>
-                        <div class="content-partRight-form-control">
-                            <label for="phone">手机:</label>
-                            <input type="password" name="phone" />
+                        <div class="information-row">
+                            <label class="fixed-label">手机:</label>
+                            <a href="#" class="data">尚未进行绑定，立即绑定！</a>
                         </div>
-                        <div class="content-partRight-form-control">
-                            <label for="address">现居地址:</label>
-                            <select>
-                                <option>陕西</option>
-                            </select>省&nbsp;&nbsp;
-                            <select>
-                                <option>西安</option>
-                            </select>市/区
+                        <div class="information-row">
+                            <label class="fixed-label">现居地址:</label>
+                            <a href="#" class="data">立即完善</a>
                         </div>
-                        <div class="content-partRight-form-control">
-                            <label for="address">职业:</label>
-                            <select>
-                                <option>学生</option>
-                            </select>
+                        <div class="information-row">
+                            <label class="fixed-label">职业:</label>
+                            <label href="#" class="data">学生</label>
                         </div>
-                        <div class="content-partRight-form-control">
-                            <input type="button" class="btn" value="保存" />
-                        </div>
-
-                    </form>
+                    </div>
                 </div>
             </div>
         </article>
